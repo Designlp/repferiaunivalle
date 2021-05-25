@@ -114,7 +114,7 @@ function content_5ab10e8a92c524_65920310 (Smarty_Internal_Template $_smarty_tpl)
 	<meta name="keywords" content="social, pixelphoto, social site">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>Home page</title>
+	<title>Inicio</title>
 	<script src="http://localhost/pixelphoto//apps/default/main/static/js/libs/jquery-3.2.1.js"></script>
 	<script src="http://localhost/pixelphoto//apps/default/main/static/css/libs/bs3/js/bootstrap.js"></script>
 	<link rel="stylesheet" href="http://localhost/pixelphoto//apps/default/main/static/css/libs/bs3/css/bootstrap.css">
