@@ -537,7 +537,7 @@ INSERT INTO `pxp_langs` (`id`, `lang_key`, `english`, `arabic`, `dutch`, `french
 (172, 'people_who_liked', 'People who liked this post', 'الناس الذين أحب هذا المنصب', 'Mensen die dit bericht leuk vonden', 'Personnes qui ont aimé ce post', 'Leute, die diesen Beitrag mochten', 'Люди, которым понравился этот пост', 'Gente a la que le gustó esta publicación', 'Bu yayını beğenenler'),
 (173, 'show_more', 'Show more', 'أظهر المزيد', 'Laat meer zien', 'Montre plus', 'Zeig mehr', 'Показать больше', 'Mostrar más', 'Daha fazla göster'),
 (174, 'no_more_comments', 'No more comments', 'لا المزيد من التعليقات', 'Geen commentaar meer', 'Pas dautres commentaires', 'Keine weiteren Kommentare', 'Больше комментариев нет', 'No mas comentarios', 'Daha fazla yorum yok'),
-(175, 'add_story', 'Add story', 'أضف قصة', 'Voeg een verhaal toe', 'Ajouter une histoire', 'Geschichte hinzufügen', 'Добавить историю', 'Añadir historia', 'Hikaye ekle'),
+(175, 'add_story', 'Add story', 'أضف قصة', 'Voeg een verhaal toe', 'Ajouter une histoire', 'Geschichte hinzufügen', 'Добавить историю', 'Añadir historias', 'Hikaye ekle'),
 (176, 'imp_gif', 'Embed gif', 'تضمين ملف gif', 'Embed gif', 'Intégrer gif', 'Gif einbetten', 'Вставить gif', 'Insertar gif', 'Embed gif'),
 (177, 'imp_vid', 'Embed video', 'تضمين الفيديو', 'Video insluiten', 'Intégrer la vidéo', 'Video einbetten', 'Встроенное видео', 'Video incrustado', 'Gömülü video'),
 (178, 'add_vid', 'Upload video', 'رفع فيديو', 'Upload video', 'Télécharger une video', 'Video hochladen', 'Загрузить видео', 'Subir video', 'Video yükle'),
