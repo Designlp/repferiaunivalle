@@ -286,7 +286,7 @@ $(document).ready(function() {
 
             var handler = StripeCheckout.configure({
                 key: "<?php echo $config['stripe_id'];?>",
-                locale: 'spanish',
+                locale: 'english',
                 image: '',
                 token: function(token) {
                   $.post(link('go_pro/stripe_donate'), {stripeToken:token.id,fund_id:fund_id,amount:amount}, function (data) {
