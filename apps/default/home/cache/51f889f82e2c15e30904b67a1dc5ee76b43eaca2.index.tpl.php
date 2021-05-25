@@ -744,7 +744,7 @@ function content_5ab10e8a92c524_65920310 (Smarty_Internal_Template $_smarty_tpl)
 		</div>
 					<div class="add-post-bf--controls clearfix">
 				<div class="btns">
-											<div class="nd6 nds" data-toggle="tooltip" title="Add story">
+											<div class="nd6 nds" data-toggle="tooltip" title="Add stories">
 							<span class="create-new-post" data-type="story">
 					      		<i class="zmdi zmdi-layers"></i>
 					      	</span>
