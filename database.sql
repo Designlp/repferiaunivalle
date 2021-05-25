@@ -621,7 +621,7 @@ INSERT INTO `pxp_langs` (`id`, `lang_key`, `english`, `arabic`, `dutch`, `french
 (255, 'v2_email_confirmed', 'Email Confirmed', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (256, 'website_use_cookies', 'Este sitio web utiliza cookies para garantizarle la mejor experiencia en nuestro sitio web.', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (257, 'got_it', 'Entendido!', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(258, 'learn_more1', 'Learn more', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(258, 'learn_more1', 'Leer mas', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (259, 'views', 'Views', 'الآراء', 'Keer bekeken', 'Des vues', 'Ansichten', 'Просмотры', 'Puntos de vista', 'Görünümler'),
 (260, 'verification', 'Verification', 'التحقق', 'Verificatie', 'Vérification', 'Nachprüfung', 'верификация', 'Verificación', 'Doğrulama'),
 (261, 'verify_p', 'Verification of the profile!', 'التحقق من الملف الشخصي!', 'Verificatie van het profiel!', 'Vérification du profil!', 'Überprüfung des Profils!', 'Проверка профиля!', 'Verificación del perfil!', 'Profilin doğrulanması!'),
