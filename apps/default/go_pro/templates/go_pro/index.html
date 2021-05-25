@@ -207,7 +207,7 @@ $(document).ready(function() {
 		$('.btn-cart').attr('disabled','true');
 		var handler = StripeCheckout.configure({
 	        key: "<?php echo $config['stripe_id'];?>",
-	        locale: 'english',
+	        locale: 'spanish',
 	        image: '',
 	        token: function(token) {
 	          $('.confirm--modal--body').html('<i class="fa fa-spin fa-spinner"></i> {{LANG c_payment}}');

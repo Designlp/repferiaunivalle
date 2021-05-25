@@ -53,7 +53,7 @@ if (isset($_GET['code']) && !empty($_GET['code'])) {
                     'last_seen' => time(),
                     'gender' => User::secure($gender),
                     'active' => '1',
-                    'language' => 'english',
+                    'language' => 'spanish',
                     'registered' => date('Y') . '/' . intval(date('m'))
                 );
 
