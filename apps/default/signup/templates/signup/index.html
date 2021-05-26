@@ -8,7 +8,7 @@
 							<img src="{{CONFIG site_url}}/media/img/user-m.png" class="male_ava" alt="user">
 							<img src="{{CONFIG site_url}}/media/img/user-f.png" class="female_ava" alt="user">
 						</span>
-						<h3 class="animated fadeInUpBig">{{LANG let_set_up}}</h3>
+						<h3 class="animated fadeInUpBig">p</h3>
 						<h4 class="animated fadeInUpBig">{{LANG create_acc_proceed}} {{CONFIG site_name}}</h4>
 						<p class="animated fadeInUpBig">{{LANG min_to_get_start}}</p>
 						<span class="fluid copyright">Copyright &copy; 2018 {{CONFIG site_name}}</span>
@@ -27,26 +27,26 @@
 				<div class="signup-alert"></div>
 				<form action="" class="form" id="signup">
 					<div class="pp_mat_input">
-						<input required="true" class="form-control" type="text" name="username" id="username" placeholder="{{LANG username}}" autofocus />
-						<label for="username">{{LANG username}}</label>
+						<input required="true" class="form-control" type="text" name="username" id="username" placeholder="Nombre de usuario" autofocus />
+						<label for="username">Usuario</label>
 						<span class="bar"></span>
 					</div>
 					
 					<div class="pp_mat_input">
 						<input required="true" class="form-control" type="email" name="email" id="email" placeholder="Dirección de correo electrónico" />
-						<label for="email">Dirección de correo electrónico</label>
+						<label for="email">Correo electrónico</label>
 						<span class="bar"></span>
 					</div>
 					
 					<div class="pp_mat_input">
 						<input required="true" class="form-control show_password" type="password" name="password" id="password" placeholder="Confirmar contraseña" />
-						<label for="password">Confirmar contraseña</label>
+						<label for="password">Escribe tu contraseña</label>
 						<span class="bar"></span>
 					</div>
 
 					<div class="pp_mat_input">
 						<input required="true" class="form-control show_password" type="password" name="conf_password" id="conf_password" placeholder="Confirmar contraseña" />
-						<label for="conf_password">Confirmar contraseña</label>
+						<label for="conf_password">Confirma contraseña</label>
 						<span class="bar"></span>
 						<div class="icon-wrapper">
 							<span toggle=".show_password" class="field-icon toggle-password">
@@ -59,19 +59,19 @@
 					<div class="form-group">
 						<select name="gender" id="gender" class="form-control">
 							<option value="male" selected="selected">
-								{{LANG male}}
+								Hombre
 							</option>
 							<option value="female">
-								{{LANG female}}
+								Mujer
 							</option>
 						</select>
 					</div>
 					<input type="hidden" name="hash" value="<?php echo($context['csrf_token']) ?>">
 					<div class="pp_terms">
 						<input type="checkbox" name="terms" id="terms" onchange="activateButton(this)">
-						<label for="terms"> I agree to the <a href="<?php pxp_link('terms-of-use') ?>">{{LANG terms_of_use}}</a></label>
+						<label for="terms"> Estoy de acuerdo con <a href="<?php pxp_link('terms-of-use') ?>">Los términos y condiciones</a></label>
 					</div>
-					<div class="pp_load_loader"><button class="btn btn-info pp_flat_btn" type="submit" id="sign_submit" disabled><span>{{LANG signup}} <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></button></div>
+					<div class="pp_load_loader"><button class="btn btn-info pp_flat_btn" type="submit" id="sign_submit" disabled><span>Registrarse<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></button></div>
 				</form>
 			</div>
 			<div class="col-sm-2 col-md-3"></div>

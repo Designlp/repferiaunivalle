@@ -196,7 +196,7 @@
 								<ul class="dropdown-menu zoom-up">
 									<?php if ($context['post_data']['is_owner'] == true) { ?>
 										<li onclick="delete_post('<?php echo($context['post_data']['post_id']) ?>',true);">
-										  	<a href="javascript:void(0);">{{LANG delete_post}}</a>
+										  	<a href="javascript:void(0);">Eliminar Post</a>
 										</li>
 									    <li id="edit-post">
 									    	<a href="javascript:void(0);">{{LANG edit_post}}</a>
@@ -246,7 +246,7 @@
 									</div>
 								<?php } else{ ?>
 									<div class="login2comment">
-										<a href="<?php echo(pxp_link('welcome')) ?>">{{LANG login}}</a> {{LANG login_to_lc_post}}
+										<a href="<?php echo(pxp_link('welcome')) ?>">Iniciar sesión</a> {{LANG login_to_lc_post}}
 									</div>
 								<?php } ?>
 							</div>

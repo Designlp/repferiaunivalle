@@ -15,24 +15,24 @@
                     <div class="pp_mat_input">
                         <input required="true" type="text" name="amount" class="form-control" value="<?php echo($context['fund']->amount) ?>">
                         <span class="bar"></span>
-                        <label>{{LANG amount}}</label>
+                        <label>Cantidad</label>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="pp_mat_input">
                         <textarea class="form-control" name="description" rows="3"><?php echo($context['fund']->description) ?></textarea>
                         <span class="bar"></span>
-                        <label>{{LANG description}}</label>
+                        <label>Descripción</label>
                     </div>
                 </div>
                 <div class="clear"></div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label>{{LANG upload_file}}</label>
+                        <label>Subir foto</label>
                         <div class="input-group">
                             <span class="input-group-btn">
                                 <span class="btn btn-default btn-file">
-                                    Browse… <input type="file" id="image" name="image">
+                                    Navegar.. <input type="file" id="image" name="image">
                                 </span>
                             </span>
                             <input type="text" class="form-control" readonly>
@@ -43,7 +43,7 @@
                 <input type="hidden" name="hash" value="<?php echo($context['csrf_token']) ?>">
                 <input type="hidden" name="id" value="<?php echo($context['fund']->id) ?>">
                 <div class="clear"></div>
-                <div class="pp_load_loader"><button class="btn btn-info pp_flat_btn" type="submit"><span>{{LANG submit}}</span></button></div>
+                <div class="pp_load_loader"><button class="btn btn-info pp_flat_btn" type="submit"><span>Enviar</span></button></div>
             </form>
         </div>
     </div>

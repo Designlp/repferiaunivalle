@@ -7,16 +7,16 @@
 		<div class="user__stat">
 			<span>
 				<b><?php echo($udata['followers']) ?></b>
-				<small>{{LANG followers}}</small>
+				<small>Seguidores</small>
 			</span>
 			<span>
 				<b><?php echo $udata['posts']; ?></b>
-				<small>{{LANG posts}}</small>
+				<small>Publicaciones</small>
 			</span>
 		</div>
 		<div class="clear"></div>
 		<button class="btn btn-info" onclick="follow(<?php echo($udata['user_id']) ?>,this);">
-			<span>{{LANG follow}}</span>
+			<span>Seguir</span>
 		</button>
 		<div class="clear"></div>
 	</div>

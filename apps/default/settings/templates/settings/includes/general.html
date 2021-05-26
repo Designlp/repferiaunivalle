@@ -10,7 +10,7 @@
 		<div class="pp_mat_input">
 			<input required="true" type="text" name="username" class="form-control" value="<?php echo($context['me']['username']) ?>">
 			<span class="bar"></span>
-			<label>{{LANG username}}*</label>
+			<label>Nombre de usuario*</label>
 		</div>
 		<div class="pp_mat_input" style="margin-bottom: 1.7em;">
 			<input required="true" type="email" name="email" class="form-control" value="<?php echo($context['me']['email']) ?>">
@@ -22,10 +22,10 @@
 			<div>
 				<select name="gender" class="form-control" required="true">
 					<option value="male" <?php if($context['me']['gender'] == 'male'){ ?> selected <?php } ?>>
-						{{LANG male}}
+						Masculino
 					</option>
 					<option value="female" <?php if($context['me']['gender'] == 'female'){ ?> selected <?php } ?>>
-						{{LANG female}}
+						Mujer
 					</option>
 				</select>
 				<span class="bar"></span>

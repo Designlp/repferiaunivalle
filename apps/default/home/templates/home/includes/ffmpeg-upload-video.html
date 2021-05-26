@@ -10,17 +10,17 @@
 	</div>
   	<form class="form" id="ffmpeg-upload-post-video" action="{{CONFIG site_url}}/aj/posts/ffmpeg-video-upload">
       	<div class="form-group">
-      		<textarea class="form-control" name="caption" rows="3" placeholder="{{LANG add_post_caption}}"></textarea>
+      		<textarea class="form-control" name="caption" rows="3" placeholder="Agregar título de publicación"></textarea>
       	</div>
   		<div class="form-group">
   			<div class="form-control selecet-file-control" onclick="$('#post-video').trigger('click');">
-  				<button class="btn btn-info" type="button">{{LANG select_file}}</button>
-  				<span class="video-file-name">{{LANG no_file_choosen}}</span>
+  				<button class="btn btn-info" type="button">Seleccione Archivo</button>
+  				<span class="video-file-name">Archivo no elegido</span>
   			</div>
   		</div>
       	<div class="form-group publish">
-      		<button type="submit" class="btn btn-info">{{LANG publish}}</button>
-      		<button type="reset" class="btn btn-default" id="close-anim-modal">{{LANG close}}</button>
+      		<button type="submit" class="btn btn-info">Publicar</button>
+      		<button type="reset" class="btn btn-default" id="close-anim-modal">Cerrar</button>
       	</div>
       	<input class="hidden" type="file" name="video" accept="video/*" id="post-video">
         <input type="hidden" name="hash" value="<?php echo($context['csrf_token']) ?>">

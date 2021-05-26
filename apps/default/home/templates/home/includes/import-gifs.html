@@ -7,11 +7,11 @@
 	</div>
   	<form class="form" id="import-post-gifs">
 		<div class="form-group">
-      		<textarea class="form-control" name="caption" rows="3" placeholder="{{LANG add_post_caption}}"></textarea>
+      		<textarea class="form-control" name="caption" rows="3" placeholder="Agregar título de publicación"></textarea>
       	</div>
       	<div class="form-group search-input">
 			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-      		<input type="text" placeholder="{{LANG search_gifs}}">
+      		<input type="text" placeholder="Buscar gifs ...
       	</div>
       	<div class="preview-video hide">
       		<button class="pull-right" type="button">
@@ -21,8 +21,8 @@
       	</div>
       	<div class="content hide"></div>
       	<div class="form-group publish">
-      		<button type="submit" class="btn btn-info">{{LANG publish}}</button>
-      		<button type="reset" class="btn btn-default" id="close-anim-modal">{{LANG close}}</button>
+      		<button type="submit" class="btn btn-info">Publicar</button>
+      		<button type="reset" class="btn btn-default" id="close-anim-modal">Cerrar</button>
       	</div>
       	<input class="hidden" id="upload-images" type="file" name="images[]" multiple accept="image/*">
         <input type="hidden" name="hash" value="<?php echo($context['csrf_token']) ?>">
