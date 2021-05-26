@@ -41,7 +41,7 @@
 			</li>
 			<li class="list-group-item noti-hover <?php if($context['page'] == 'notifications'){ ?>active noti-active<?php } ?>">
 				<a href="{{CONFIG site_url}}/settings/notifications/<?php echo $context['me']['user_id'] ?>"  data-ajax="ajax_loading.php?app=settings&apph=settings&user=<?php echo($context['me']['username']) ?>&page=notifications">
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M22 17H2a3 3 0 0 0 3-3V9a7 7 0 0 1 14 0v5a3 3 0 0 0 3 3zm-8.27 4a2 2 0 0 1-3.46 0"></path></svg> {{LANG notifications}}
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M22 17H2a3 3 0 0 0 3-3V9a7 7 0 0 1 14 0v5a3 3 0 0 0 3 3zm-8.27 4a2 2 0 0 1-3.46 0"></path></svg> Notificaciones
 				</a>
 			</li>
 			<?php if ($context['me']['p_privacy'] == 0 || $context['me']['p_privacy'] == 1) { ?>

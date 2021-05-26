@@ -38,7 +38,7 @@
 										<ul class="dropdown-menu zoom">
 											<?php if ($context['is_owner']) { ?>
 												<li><a href="{{CONFIG site_url}}/settings/privacy/{{ME username}}" data-ajax="ajax_loading.php?app=settings&apph=settings&user=<?php echo($context['user_data']['username']) ?>&page=privacy">{{LANG profile_privacy}}</a></li>
-												<li><a href="{{CONFIG site_url}}/settings/notifications/{{ME username}}" data-ajax="ajax_loading.php?app=settings&apph=settings&user=<?php echo($context['user_data']['username']) ?>&page=notifications">{{LANG notifications}}</a></li>
+												<li><a href="{{CONFIG site_url}}/settings/notifications/{{ME username}}" data-ajax="ajax_loading.php?app=settings&apph=settings&user=<?php echo($context['user_data']['username']) ?>&page=notifications">Notificaciones</a></li>
 												<?php if ($config['business_account'] == 'on' && $context['user_data']['business_account']) { ?>
 													<li><a href="{{CONFIG site_url}}/account_analytics" data-ajax="ajax_loading.php?app=account_analytics&apph=account_analytics">{{LANG account_analytics}}</a></li>
 												<?php } ?>
