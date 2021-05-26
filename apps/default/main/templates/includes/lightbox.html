@@ -36,7 +36,7 @@
 						</div>
 						<div class="is_should_hide1 text_m_reprted-<?php echo($context['post_data']['post_id']) ?>">
 							<div class="is_should_hide2">
-								<p class="is_should_hide3">{{LANG post_m_report}}</p>
+								<p class="is_should_hide3">Advertencia: esta publicación puede contener imáge...</p>
 								<div class="is_should_hide4">
 									<a class="is_should_hide5" href="javascript:void(0);" onclick="show_m_reprted(<?php echo($context['post_data']['post_id']) ?>)">{{LANG click_to_see}}</a>
 								</div>
@@ -131,7 +131,7 @@
 								<span><time><?php echo(time2str($context['post_data']['time'])) ?></time></span>
 							</div>
 							<?php if (IS_LOGGED && $context['user']['user_id'] != $context['post_data']['user_id']) { ?>
-								<span <?php if($context['is_following']){ ?> class="active"<?php } ?> id="lb-follow" data-user-id="<?php echo($context['post_data']['user_id']) ?>" <?php if($context['is_following']){ ?> title="{{LANG following}}"<?php }else{ ?> title="{{LANG follow}}"<?php } ?>>
+								<span <?php if($context['is_following']){ ?> class="active"<?php } ?> id="lb-follow" data-user-id="<?php echo($context['post_data']['user_id']) ?>" <?php if($context['is_following']){ ?> title="Siguiendo"<?php }else{ ?> title="Seguir"<?php } ?>>
 									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-plus"><?php if($context['is_following']){ ?><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline><?php } else{ ?><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line><?php } ?></svg>
 								</span>
 							<?php } ?>
@@ -150,7 +150,7 @@
 						<?php } ?>
 						<div class="comments">
 							<ul class="post-comments-list">
-								<span class="pp_light_comm_count"><?php echo $context['post_data']['votes']; ?>  {{LANG comments}}</span>
+								<span class="pp_light_comm_count"><?php echo $context['post_data']['votes']; ?>  Comentarios</span>
 								<?php foreach ($context['post_data']['comments'] as $key => $comment) { ?>
 									<li data-post-comment="<?php echo($comment['id']) ?>">
 										<div class="user-avatar">
@@ -174,7 +174,7 @@
 											<form class="form add-comment" style="display: none;" id="lightbox_reply_form_<?php echo $comment['id']; ?>">
 												<div class="fluid">
 													<div class="form-group">
-														<input type="text" class="form-control comment" onkeydown="pxp_reply_comment(<?php echo $comment['id']; ?>,event);" placeholder="{{LANG write_comment}}" id="emojionearea_comment_lightbox_<?php echo $comment['id']; ?>">
+														<input type="text" class="form-control comment" onkeydown="pxp_reply_comment(<?php echo $comment['id']; ?>,event);" placeholder="Escribir un comentario" id="emojionearea_comment_lightbox_<?php echo $comment['id']; ?>">
 													</div>
 												</div>
 												<div class="reply_commenting_overlay hidden">
@@ -183,7 +183,7 @@
 											</form>
 										</div>
 										<?php if ($comment['is_owner']) { ?>
-											<span class="pull-right delcomment" title="{{LANG delete_comment}}" onclick="delete_commnet(<?php echo($comment['id']) ?>);">
+											<span class="pull-right delcomment" title="Eliminar comentario" onclick="delete_commnet(<?php echo($comment['id']) ?>);">
 												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
 											</span>
 										<?php } ?>
@@ -200,7 +200,7 @@
 									</a>
 									<span class="like-icon"><div class="heart-animation-1"></div><div class="heart-animation-2"></div></span>
 								</span>
-								<span class="pointer" onclick="view_post_likes('<?php echo($context['post_data']['post_id']) ?>');" ><b data-likes="" data-post-likes="<?php echo($context['post_data']['post_id']) ?>"><?php echo $context['post_data']['likes']; ?></b> {{LANG likes}}</span>
+								<span class="pointer" onclick="view_post_likes('<?php echo($context['post_data']['post_id']) ?>');" ><b data-likes="" data-post-likes="<?php echo($context['post_data']['post_id']) ?>"><?php echo $context['post_data']['likes']; ?></b> Me gusta</span>
 								<?php if ($context['post_data']['type'] == 'video') { ?>
 									<span class="video_views_ ml_"><span><?php echo $context['post_data']['views']; ?> </span> {{LANG views}}</span>
 								<?php } ?>

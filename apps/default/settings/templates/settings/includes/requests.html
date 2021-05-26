@@ -14,7 +14,7 @@
 					</div>
 					<div class="user__info">
 						<h5><a href="<?php echo(un2url($udata['username'])) ?>"  data-ajax="ajax_loading.php?app=profile&apph=profile&uname=<?php echo($udata['username']) ?>"><?php echo($udata['username']) ?></a></h5>
-						<!--<p>{{LANG last_seen}}: <?php echo(time2str($udata['last_seen'])) ?></p>-->
+						<!--<p>Ultima vez visto: <?php echo(time2str($udata['last_seen'])) ?></p>-->
 						<?php if (IS_LOGGED && $udata['user_id'] != $context['user']['user_id']) { ?>
 							<div class="request-opts">
 							<button type="button" onclick="accept_follow(this,<?php echo($udata['user_id']) ?>)" class="btn accept_follow_btn accept_req" title="{{LANG accept}}">

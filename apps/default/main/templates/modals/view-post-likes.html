@@ -21,16 +21,16 @@
 						<?php if (IS_LOGGED && $udata['user_id'] != $context['user']['user_id']) { 
 							if (isset($udata['is_following']) && $udata['is_following'] == true) { ?>
 								<button class="btn btn-info btn-following" onclick="follow(<?php echo $udata['user_id']; ?>,this);">
-									<span>{{LANG following}}</span>
+									<span>Siguiendo</span>
 								</button>
 							<?php } else{ ?>
 								<button class="btn btn-info" onclick="follow(<?php echo $udata['user_id']; ?>,this);">
-									<span>{{LANG follow}}</span>
+									<span>Seguir</span>
 								</button>
 							<?php } ?>
 						<?php } elseif (IS_LOGGED == false) { ?>
 							<button class="btn btn-info" onclick="follow(<?php echo $udata['user_id']; ?>,this);">
-								<span>{{LANG follow}}</span>
+								<span>Seguir</span>
 							</button>
 						<?php } ?>
 					</li>

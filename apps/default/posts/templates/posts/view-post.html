@@ -130,7 +130,7 @@
 								<?php if ($context['is_owner'] == false) { 
 									if ($context['is_following']) { ?>
 										<button class="btn-follow pull-right btn-following" onclick="follow(<?php echo($context['post_data']['user_id']) ?>,this);">
-											<span>{{LANG following}}</span>
+											<span>Siguiendo</span>
 										</button>
 									<?php  } else{ ?>
 										<button class="btn-follow pull-right" onclick="follow(<?php echo($context['post_data']['user_id']) ?>,this);">
@@ -155,7 +155,7 @@
 					
 					<div class="comments">
 						<ul class="post-comments-list">
-							<span class="main_post_comm"><?php echo $context['post_data']['votes']; ?> {{LANG comments}}</span>
+							<span class="main_post_comm"><?php echo $context['post_data']['votes']; ?> Comentarios</span>
 							<?php foreach ($context['post_data']['comments'] as $key => $comment) { ?>
 								<li data-post-comment="<?php echo($comment['id']) ?>">
 									<div class="user-avatar">
@@ -179,7 +179,7 @@
 										<form class="form add-comment" style="display: none;" id="add_reply_form_<?php echo $comment['id']; ?>">
 											<div class="fluid">
 												<div class="form-group">
-													<input type="text" class="form-control comment" onkeydown="pxp_reply_comment(<?php echo $comment['id']; ?>,event);" placeholder="{{LANG write_comment}}" id="emojionearea_comment<?php echo $comment['id']; ?>">
+													<input type="text" class="form-control comment" onkeydown="pxp_reply_comment(<?php echo $comment['id']; ?>,event);" placeholder="Escribir un comentario" id="emojionearea_comment<?php echo $comment['id']; ?>">
 												</div>
 											</div>
 											<div class="reply_commenting_overlay hidden">
@@ -188,7 +188,7 @@
 										</form>
 									</div>
 									<?php if ($comment['is_owner']) { ?>
-										<span class="pull-right delcomment" title="{{LANG delete_comment}}" onclick="delete_commnet(<?php echo($comment['id']) ?>);">
+										<span class="pull-right delcomment" title="Eliminar comentario" onclick="delete_commnet(<?php echo($comment['id']) ?>);">
 											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
 										</span>
 									<?php } ?>
@@ -210,7 +210,7 @@
 									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
 								</span>
 							<?php } ?>
-							<span <?php if($context['post_data']['likes']){ ?>  class="pointer" onclick="view_post_likes('<?php echo($context['post_data']['post_id']) ?>');"<?php } ?>><span  data-post-likes="<?php echo($context['post_data']['post_id']) ?>"><?php echo $context['post_data']['likes']; ?></span> {{LANG likes}}</span>
+							<span <?php if($context['post_data']['likes']){ ?>  class="pointer" onclick="view_post_likes('<?php echo($context['post_data']['post_id']) ?>');"<?php } ?>><span  data-post-likes="<?php echo($context['post_data']['post_id']) ?>"><?php echo $context['post_data']['likes']; ?></span> Me gusta</span>
 							<?php if ($context['post_data']['type'] == 'video') { ?>
 								<span class="video_views_ ml_"><span><?php echo $context['post_data']['views']; ?></span> {{LANG views}}</span>
 							<?php } ?>
@@ -298,8 +298,8 @@
 			<div class="follow-suggestions-cr">
 				<div class="fluid">
 					<h5>
-						{{LANG follow_suggestions}}
-						<a href="<?php echo(pxp_link('explore/people')) ?>" class="pull-right">{{LANG see_all}} <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></a>
+						Sugerencias para ti
+						<a href="<?php echo(pxp_link('explore/people')) ?>" class="pull-right">Ver todo <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></a>
 					</h5>
 				</div>
 				<div class="cr-wrapper">
@@ -316,7 +316,7 @@
 									<span><?php echo($follow_sugg['name']) ?></span>
 								</div>
 								<div class="button">
-									<button onclick="follow(<?php echo($follow_sugg['user_id']) ?>,this);"><span>{{LANG follow}}</span></button>
+									<button onclick="follow(<?php echo($follow_sugg['user_id']) ?>,this);"><span>Seguir</span></button>
 								</div>
 							</div>
 						<?php } ?>
@@ -421,11 +421,11 @@
 				})
 				.done(function(data) {
 					if (data.status == 200 && data.code == 0) {
-						zis.find('a').text("{{LANG save_post}}");
+						zis.find('a').text("Guardar publicaciones");
 					}
 
 					else if(data.status == 200 && data.code == 1){
-						zis.find('a').text("{{LANG unsave_post}}");
+						zis.find('a').text("ublicaciones no guardadas");
 					}
 
 					$.toast(data.message,{

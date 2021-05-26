@@ -15,17 +15,17 @@
 		<div class="pp_mat_input">
 			<input type="url2" name="name" class="form-control" value="<?php echo($context['me']['name']) ?>">
 			<span class="bar"></span>
-			<label>{{LANG name}}</label>
+			<label>Nombre</label>
 		</div>
 		<div class="pp_mat_input">
 			<textarea class="form-control" name="message" rows="3"></textarea>
 			<span class="bar"></span>
-			<label>{{LANG message}}</label>
+			<label>Mensaje</label>
 		</div>
 		<div class="pp_mat_input">
 			<div>
-				<p class="verify_text_1">{{LANG upload_docs}}</p>
-				<p class="verify_text_2">{{LANG select_verif_images}}</p>
+				<p class="verify_text_1">Subir documentos</p>
+				<p class="verify_text_2">Por favor, cargue una foto con su pasaporte / iden...</p>
 			</div>
 			<div class="clear"></div>
 			
@@ -52,7 +52,7 @@
 		</div>
 		<div class="clear"></div>
 
-		<div class="pp_load_loader"><button class="btn btn-info pp_flat_btn" type="submit"><span>{{LANG send}}</span></button></div>
+		<div class="pp_load_loader"><button class="btn btn-info pp_flat_btn" type="submit"><span>Enviar</span></button></div>
 		<input type="hidden" name="user_id" value="<?php echo($context['me']['user_id']) ?>">
 		<input type="hidden" name="hash" value="<?php echo($context['csrf_token']) ?>">
 		<input type="file" name="passport" class="hidden" id="ip-photo" accept="image/x-png,image/jpg,image/jpeg">

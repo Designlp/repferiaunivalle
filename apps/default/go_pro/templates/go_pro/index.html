@@ -3,7 +3,7 @@
 	<div class="sub__header go_pro_sub_header">
 		<div class="container">
 			<div class="col-md-8">
-				<h4 class="animated fadeInUpBig">{{LANG upgrade_to_pro}}</h4>
+				<h4 class="animated fadeInUpBig">Actualizar a Pro</h4>
 			</div>
 			<div class="col-md-4 pp_exp_head_svg text-center hidden-xs hidden-sm">
 				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="feather feather-compass" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
@@ -14,8 +14,8 @@
 	
 	<div class="container">
 		<div class="explore-people-container">
-			<h2 class="text-center">{{LANG join_pro}}</h2>
-			<h4 class="text-center">{{LANG enjoy_more_features}}</h4>
+			<h2 class="text-center">Únete a Pro!</h2>
+			<h4 class="text-center">Disfrute de más características con nuestro paquetes.</h4>
 			<div class="row people">
 				<div class="col-md-2"></div>
 				<div class="col-md-4">
@@ -23,12 +23,12 @@
 						<b>$0</b>
 						<h3>Miembro gratuito</h3>
 						<hr>
-						<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#f44336" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path></svg> {{LANG featured_member}}</p>
-						<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#f44336" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path></svg> {{LANG verified_badge}}</p>
+						<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#f44336" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path></svg> Miembro destacado</p>
+						<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#f44336" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path></svg> Insignia verificada</p>
 						<?php if ($config['boosted_posts'] > 0) { ?>
-							<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#f44336" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path></svg> {{LANG posts_promote_up}} 0 <?php if ($config['boosted_posts'] > 1) { ?>{{LANG posts}}<?php }else{ ?>{{LANG post}}<?php } ?></p>
+							<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#f44336" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path></svg> Promocionar hasta 0 <?php if ($config['boosted_posts'] > 1) { ?>Publicaciones<?php }else{ ?>Publicaciones<?php } ?></p>
 						<?php } ?>
-						<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#f44336" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path></svg> {{LANG profile_Style}}</p>
+						<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#f44336" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path></svg> Estilo de perfil único</p>
 						<div class="button_go_pro">
 							<button onclick="location.href='{{CONFIG site_url}}';"><span>Mantente Libre</span></button>
 						</div>
@@ -38,16 +38,16 @@
 					<div class="text-center go_pro_plan pro_plan">
 						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M15.2,10.7L16.6,16L12,12.2L7.4,16L8.8,10.8L4.6,7.3L10,7L12,2L14,7L19.4,7.3L15.2,10.7M14,19.1H13V16L12,15L11,16V19.1H10A2,2 0 0,0 8,21.1V22.1H16V21.1A2,2 0 0,0 14,19.1Z" /></svg>
 						<b><?php echo $context['currency_symbol'].$config['pro_price']; ?></b>
-						<h3>{{LANG pro_member}}</h3>
+						<h3>Miembro Pro</h3>
 						<hr>
-						<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#4CAF50" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg> {{LANG featured_member}}</p>
-						<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#4CAF50" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg> {{LANG verified_badge}}</p>
+						<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#4CAF50" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg> Miembro destacado</p>
+						<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#4CAF50" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg> Insignia verificada</p>
 						<?php if ($config['boosted_posts'] > 0) { ?>
-							<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#4CAF50" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg> {{LANG posts_promote_up}} {{CONFIG boosted_posts}} <?php if ($config['boosted_posts'] > 1) { ?>{{LANG posts}}<?php }else{ ?>{{LANG post}}<?php } ?></p>
+							<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#4CAF50" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg> Promocionar hasta {{CONFIG boosted_posts}} <?php if ($config['boosted_posts'] > 1) { ?>Publicaciones<?php }else{ ?>Publicaciones<?php } ?></p>
 						<?php } ?>
-						<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#4CAF50" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg> {{LANG profile_Style}}</p>
+						<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#4CAF50" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg> Estilo de perfil único</p>
 						<div class="button_go_pro button_go_pro_upgrade">
-							<button onclick="Pxp_GetPaymentMethods('pro');"><span>{{LANG upgrade}}</span></button>
+							<button onclick="Pxp_GetPaymentMethods('pro');"><span>Mejorar</span></button>
 						</div>
 					</div>
 				</div>
@@ -60,12 +60,12 @@
 <div class="confirm--modal go_pro--modal" style="display: none !important;">
 	<div class="confirm--modal--inner">
 		<div class="confirm--modal--body">
-			<h5>{{LANG choose_method}}</h5>
+			<h5>Elija un método de pago</h5>
 			<div class="payment_methods_modal">
 			</div>
 		</div>
 		<div class="confirm--modal--footer">
-			<button class="btn btn-default" data-confirm--modal-dismiss>{{LANG cancel}}</button>
+			<button class="btn btn-default" data-confirm--modal-dismiss>Cancelar</button>
 		</div>
 	</div>
 </div>
@@ -73,7 +73,7 @@
 <div class="confirm--modal bank_payment--modal" style="display: none !important;">
 	<div class="confirm--modal--inner">
 		<div class="confirm--modal--body dt_bank_trans_modal">
-			<h5>{{LANG bank_transfer}}</h5>
+			<h5>Transferencia bancaria</h5>
 			<div class="bank_alert"></div>
 			<?php echo $config['bank_description'];?>
 			<br>
@@ -95,8 +95,8 @@
 			</div>
 		</div>
 		<div class="confirm--modal--footer">
-			<button class="btn btn-default" data-confirm--modal-dismiss>{{LANG cancel}}</button>
-			<button class="btn btn-danger btn-red send_bank">{{LANG send}}</button>
+			<button class="btn btn-default" data-confirm--modal-dismiss>Cancelar</button>
+			<button class="btn btn-danger btn-red send_bank">Enviar</button>
 			<form class="bank_transfer_form">
 	      		<input class="hidden" id="upload-image" type="file" name="image" multiple accept="image/*">
 	      		<input class="hidden" type="text" name="type" value="pro">
@@ -176,14 +176,14 @@ $(document).ready(function() {
 
 	function Pxp_GetPaymentMethods(type) {
 		$('.button_go_pro_upgrade').find('button').attr('disabled','true');
-		$('.button_go_pro_upgrade').find('button').find('span').html("{{LANG please_wait}}");
+		$('.button_go_pro_upgrade').find('button').find('span').html("Por favor espera..");
 		$.post(link('main/get_payment_methods'), {type: type}, function(data, textStatus, xhr) {
 			if (data.status == 200) {
 				$('.payment_methods_modal').html(data.html);
 				$('.go_pro--modal').fadeIn(250);
 			}
 			$('.button_go_pro_upgrade').find('button').removeAttr('disabled');
-			$('.button_go_pro_upgrade').find('button').find('span').html("{{LANG upgrade}}");
+			$('.button_go_pro_upgrade').find('button').find('span').html("Mejorar");
 		});
 	}
 	function Pxp_GetPayPalLink(type) {
@@ -210,12 +210,12 @@ $(document).ready(function() {
 	        locale: 'english',
 	        image: '',
 	        token: function(token) {
-	          $('.confirm--modal--body').html('<i class="fa fa-spin fa-spinner"></i> {{LANG c_payment}}');
+	          $('.confirm--modal--body').html('<i class="fa fa-spin fa-spinner"></i> Confirmando su pago, por favor espere ..');
 	          $.post(link('go_pro/stripe_payment'), {stripeToken:token.id,type:type,amount:amount}, function (data) {
 	          	 if (data.status == 200) {
 	          	 	window.location.href = data.url;
 	          	 } else {
-	          	 	$('.confirm--modal--body').html('<i class="fa fa-spin fa-spinner"></i> {{LANG payment_declined}}');
+	          	 	$('.confirm--modal--body').html('<i class="fa fa-spin fa-spinner"></i> Pago rechazado, inténtalo de nuevo más tarde.');
 	          	 }
 	          });
 	        }

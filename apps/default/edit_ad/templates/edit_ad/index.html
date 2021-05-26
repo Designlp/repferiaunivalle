@@ -46,7 +46,7 @@
 						<div class="clear"></div>
 					</div>
 					<div class="pp_mat_select">
-						<label class="pp_mat_label">{{LANG bidding}}</label>
+						<label class="pp_mat_label">Ofertas</label>
 						<div>
 							<select name="bidding" class="form-control">
 								<option value="clicks" <?php echo ($context['user_ad']->bidding == 'clicks' ? 'selected' : ''); ?>><?php echo str_replace('{{PRICE}}',  $context['currency_symbol'] . $config['ad_c_price'], $context['lang']['pay_per_click']); ?></option>
@@ -57,7 +57,7 @@
 						<div class="clear"></div>
 					</div>
 					<div class="pp_mat_select">
-						<label class="pp_mat_label">{{LANG placement}}</label>
+						<label class="pp_mat_label">Colocación</label>
 						<div>
 							<select name="appears" class="form-control">
 								<option value="post" <?php echo ($context['user_ad']->appears == 'post' ? 'selected' : ''); ?>><?php echo $context['lang']['post']; ?></option>

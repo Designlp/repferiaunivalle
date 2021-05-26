@@ -3,7 +3,7 @@
 		<div class="sub__header">
 			<div class="container">
 				<div class="col-md-8">
-					<h4 class="animated fadeInUpBig">{{LANG explore_posts}}</h4>
+					<h4 class="animated fadeInUpBig">Explorar publicaciones</h4>
 					<p class="animated fadeInUpBig"><?php echo lang('explore_posts_desc') ?></p>
 				</div>
 				<div class="col-md-4 pp_exp_head_svg text-center hidden-xs hidden-sm">
@@ -22,7 +22,7 @@
 			<?php if ($context['follow']) { ?>
 			<div class="container">
 				<div class="fluid">
-					<h5>{{LANG follow_suggestions}}<a href="<?php echo(pxp_link('explore/people')); ?>" data-ajax="ajax_loading.php?app=explore&apph=people" class="pull-right">{{LANG see_all}} <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></a>
+					<h5>Sugerencias para ti <a href="<?php echo(pxp_link('explore/people')); ?>" data-ajax="ajax_loading.php?app=explore&apph=people" class="pull-right">Ver todo <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></a>
 					</h5>
 				</div>
 				<div class="owl-carousel" id="follow__suggestions-cr">

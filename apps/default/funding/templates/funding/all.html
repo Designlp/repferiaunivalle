@@ -37,7 +37,7 @@ function Pxp_LoadMoreFund(self) {
         if (data.status == 200) {
             if (data.html != '') {
                 $('.list').append(data.html);
-                $(self).find('span').text('Carga más);
+                $(self).find('span').text('Carga más');
             }
             else{
                 $('.fund_btn').remove();

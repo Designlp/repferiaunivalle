@@ -24,11 +24,11 @@
 			    	<?php if ($post_data['user_data']['is_pro']) { ?>
 			    		<?php if ($post_data['boosted'] == 0) { ?>
 			    			<li onclick="pxp_boost_post(<?php echo $post_data['post_id']; ?>);">
-					    		<a href="javascript:void(0);" id="boost_<?php echo $post_data['post_id']; ?>">{{LANG boost_post}}</a>
+					    		<a href="javascript:void(0);" id="boost_<?php echo $post_data['post_id']; ?>">Publicar un Boost</a>
 					    	</li>
 			    		<?php }else{ ?>
 			    			<li onclick="pxp_boost_post(<?php echo $post_data['post_id']; ?>);">
-					    		<a href="javascript:void(0);" id="boost_<?php echo $post_data['post_id']; ?>">{{LANG unboost_post}}</a>
+					    		<a href="javascript:void(0);" id="boost_<?php echo $post_data['post_id']; ?>">Publicar unBoost</a>
 					    	</li>
 			    	<?php }} ?>
 				<?php } ?>
@@ -45,7 +45,7 @@
 				<?php } ?>
 			  	<li onclick="embed_post(<?php echo $post_data['post_id']; ?>,this);">
 			  		<a href="javascript:void(0);">
-			  			{{LANG embed}}
+						Empotrar
 			  		</a>
 			  	</li>
 			    <li>
@@ -91,17 +91,17 @@
 	<div class="post-votes">
 		<div onclick="view_post_likes(<?php echo $post_data['post_id']; ?>);">
 			<span data-post-likes="<?php echo $post_data['post_id']; ?>"><?php echo $post_data['likes']; ?></span>
-			<strong>{{LANG likes}}</strong>
+			<strong>Me gusta</strong>
 		</div>
 		<div onclick="toggle_post_comm(<?php echo $post_data['post_id']; ?>);">
 			<span><?php echo $post_data['votes']; ?></span>
-			<strong>{{LANG comments}}</strong>
+			<strong>Comentarios</strong>
 		</div>
 	</div>
 	
 	<div class="caption" data-caption>
 		<?php if ($post_data['type'] == 'fetched' && $post_data['link']) { ?>
-			<a href="<?php echo($post_data['link']) ?>" target="_blank">{{LANG click_to_visit}}</a>
+			<a href="<?php echo($post_data['link']) ?>" target="_blank">Haga clic para visitar</a>
 			<br>
 		<?php } ?>
 		<?php if ($post_data['description']) {
@@ -119,7 +119,7 @@
 
 			<?php if ($post_data['votes'] > 4) { ?>
 				<li class="load-comments">
-					<button onclick="load_tlp_comments(<?php echo $post_data['post_id']; ?>,this);">{{LANG show_more}} {{LANG comments}}</button>
+					<button onclick="load_tlp_comments(<?php echo $post_data['post_id']; ?>,this);"> Mostrar más Comentarios</button>
 				</li>
 			<?php } ?>
 		</ul>
@@ -130,7 +130,7 @@
 					<img src="{{ME avatar}}" width="34px" height="34px" class="img-circle">
 				</div>
 				<div class="form-group">
-					<input type="text" class="form-control comment" onkeydown="comment_post(<?php echo $post_data['post_id']; ?>,event);" placeholder="{{LANG write_comment}}" id="emojionearea<?php echo $post_data['post_id']; ?>">
+					<input type="text" class="form-control comment" onkeydown="comment_post(<?php echo $post_data['post_id']; ?>,event);" placeholder="Escribir un comentario" id="emojionearea<?php echo $post_data['post_id']; ?>">
 				</div>
 			</div>
 			<div class="commenting-overlay hidden">

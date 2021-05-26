@@ -34,19 +34,19 @@
 <div class="confirm--modal wallet--modal" style="display: none !important;">
 	<div class="confirm--modal--inner">
 		<div class="confirm--modal--body">
-			<h5>{{LANG choose_method}}</h5>
+			<h5>Elija un método de pago</h5>
 			<div class="payment_methods_wallet_modal">
 			</div>
 		</div>
 		<div class="confirm--modal--footer">
-			<button class="btn btn-default" data-confirm--modal-dismiss>{{LANG cancel}}</button>
+			<button class="btn btn-default" data-confirm--modal-dismiss>Cancelar</button>
 		</div>
 	</div>
 </div>
 <div class="confirm--modal bank_payment--modal" style="display: none !important;">
 	<div class="confirm--modal--inner">
 		<div class="confirm--modal--body dt_bank_trans_modal">
-			<h5>{{LANG bank_transfer}}</h5>
+			<h5>Transferencia bancaria</h5>
 			<div class="bank_alert"></div>
 			<?php echo $config['bank_description'];?>
 			<br>
@@ -68,7 +68,7 @@
 			</div>
 		</div>
 		<div class="confirm--modal--footer">
-			<button class="btn btn-default" data-confirm--modal-dismiss>{{LANG cancel}}</button>
+			<button class="btn btn-default" data-confirm--modal-dismiss>Cancelar</button>
 			<button class="btn btn-danger btn-red send_bank">{{LANG send}}</button>
 			<form class="bank_transfer_form">
 	      		<input class="hidden" id="upload-image" type="file" name="image" multiple accept="image/*">

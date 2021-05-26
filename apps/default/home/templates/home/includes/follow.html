@@ -2,8 +2,8 @@
 <div class="follow-suggestions-cr">
 	<div class="fluid">
 		<h5>
-			{{LANG follow_suggestions}}
-			<a href="<?php echo(pxp_link('explore/people')) ?>" data-ajax="ajax_loading.php?app=explore&apph=people" class="pull-right">{{LANG see_all}} <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></a>
+			Sugerencias para ti
+			<a href="<?php echo(pxp_link('explore/people')) ?>" data-ajax="ajax_loading.php?app=explore&apph=people" class="pull-right">Ver todo <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></a>
 		</h5>
 	</div>
 	<div class="cr-wrapper">
@@ -24,7 +24,7 @@
 
 					<div class="button">
 						<button onclick="follow(<?php echo $follow_sugg['user_id']; ?>,this);">
-				  			<span>{{LANG follow}}</span>
+				  			<span>Seguir</span>
 				  		</button>
 					</div>
 				</div>

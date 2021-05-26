@@ -4,22 +4,22 @@
 			<form id="startup_info">
 				<div class="start_head">
 					<h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></svg> {{LANG tell_us}}</h3>
-					<p onclick="skip_startup()">{{LANG skip_step}}</p>
+					<p onclick="skip_startup()">O Salta este paso por ahora</p>
 				</div>
 				<div class="col-md-3"></div>
 				<div class="col-md-6">
 					<div class="pp_mat_input">
 						<input required="true" class="form-control" type="text" name="fname" id="fname"  autofocus />
-						<label for="fname">{{LANG fname}}</label>
+						<label for="fname">Nombre</label>
 						<span class="bar"></span>
 					</div>
 					<div class="pp_mat_input">
 						<input required="true" class="form-control" type="text" name="lname" id="lname"  autofocus />
-						<label for="lname">{{LANG lname}}</label>
+						<label for="lname">Apellido</label>
 						<span class="bar"></span>
 					</div>
 					<div class="pp_mat_select">
-						<label class="pp_mat_label">{{LANG country}}</label>
+						<label class="pp_mat_label">País</label>
 						<div>
 							<select name="country" class="form-control">
 								<?php foreach ($context['countries_name'] as $cid => $cname) { ?>
@@ -31,7 +31,7 @@
 						<div class="clear"></div>
 					</div>
 					<div class="pp_welcome_feature startup_button">
-						<div class="pp_load_loader"><button class="btn btn-info pp_flat_btn" type="submit"><span>{{LANG save_c}}</span></button></div>
+						<div class="pp_load_loader"><button class="btn btn-info pp_flat_btn" type="submit"><span>Guardar Continuar</span></button></div>
 					</div>
 				</div>
 				<div class="col-md-3"></div>

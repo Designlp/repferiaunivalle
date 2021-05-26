@@ -4,21 +4,21 @@
 	</div>
 	<div class="user__info">
 		<h5><a href="<?php echo(un2url($udata['username'])) ?> " data-ajax="ajax_loading.php?app=profile&apph=profile&uname=<?php echo($udata['username']) ?>"><?php echo($udata['username']) ?></a></h5>
-		<!--<p>{{LANG last_seen}}: <?php echo(time2str($udata['last_seen'])) ?></p>-->
+		<!--<p>Ultima vez visto: <?php echo(time2str($udata['last_seen'])) ?></p>-->
 		<?php if (IS_LOGGED && $udata['user_id'] != $context['user']['user_id']) {
 			if ($udata['is_following'] == true) { ?>
 				<button class="btn btn-info btn-following" onclick="follow(<?php echo($udata['user_id']) ?>,this);">
-					<span>{{LANG following}}</span>
+					<span>Siguiendo</span>
 				</button>
 				<?php
 			} else{ ?>
 				<button class="btn btn-info" onclick="follow(<?php echo($udata['user_id']) ?>,this);">
-					<span>{{LANG follow}}</span>
+					<span>Seguir</span>
 				</button>
 			<?php }
 		} elseif (IS_LOGGED === false) { ?>
 			<button class="btn btn-info" onclick="follow(<?php echo($udata['user_id']) ?>,this);">
-				<span>{{LANG follow}}</span>
+				<span>Seguir</span>
 			</button>
 		<?php } ?>
 	</div>

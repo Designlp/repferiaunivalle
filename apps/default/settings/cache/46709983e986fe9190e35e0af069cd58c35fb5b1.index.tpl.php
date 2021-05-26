@@ -173,7 +173,7 @@ function content_5ab111ca514cf3_44933753 (Smarty_Internal_Template $_smarty_tpl)
                             </span>
                             <div class="dropdown-menu zoom">
                                 <div class="header">
-                                    Notifications
+                                    Notificaciones
                                     <a href="http://localhost/pixelphoto//settings/notifications/deendoughouz">
                                         <i class="ion-ios-settings-strong"></i>
                                     </a>
