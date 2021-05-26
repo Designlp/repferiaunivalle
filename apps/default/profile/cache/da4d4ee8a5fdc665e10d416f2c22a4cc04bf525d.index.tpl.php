@@ -85,7 +85,7 @@ function content_5ab10ea3d31795_48832681 (Smarty_Internal_Template $_smarty_tpl)
 <head>
 	<meta charset="UTF-8">
 
-	<meta name="title" content="PixelPhoto">
+	<meta name="title" content="Feria Univalle">
 	<meta name="description" content="PixelPhoto is a PHP Media Sharing Script, PixelPhoto is the best way to start your own media sharing script!">
 	<meta name="keywords" content="social, pixelphoto, social site">
 
