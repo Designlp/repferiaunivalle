@@ -15,7 +15,7 @@
 		<div class="pp_mat_input" style="margin-bottom: 1.7em;">
 			<input required="true" type="email" name="email" class="form-control" value="<?php echo($context['me']['email']) ?>">
 			<span class="bar"></span>
-			<label>Core*</label>
+			<label>Correo*</label>
 		</div>
 		<div class="pp_mat_select">
 			<label class="pp_mat_label">Género*</label>
@@ -37,7 +37,7 @@
 			<div>
 				<select name="country" class="form-control">
 					<?php foreach ($context['countries_name'] as $cid => $cname) { ?>
-						<option value="<?php echo($cid) ?>" <?php if($context['me']['country_id'] == $cid){ ?> selected <?php } ?>>
+						<option value="<?php echo($cid) ?>" <?php if($context['me']['country_id'] == $cid){ ?> Seleccionar <?php } ?>>
 							<?php echo $cname; ?>
 						</option>
 					<?php } ?>
