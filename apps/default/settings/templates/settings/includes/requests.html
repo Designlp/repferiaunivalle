@@ -17,7 +17,7 @@
 						<!--<p>Ultima vez visto: <?php echo(time2str($udata['last_seen'])) ?></p>-->
 						<?php if (IS_LOGGED && $udata['user_id'] != $context['user']['user_id']) { ?>
 							<div class="request-opts">
-							<button type="button" onclick="accept_follow(this,<?php echo($udata['user_id']) ?>)" class="btn accept_follow_btn accept_req" title="{{LANG accept}}">
+							<button type="button" onclick="accept_follow(this,<?php echo($udata['user_id']) ?>)" class="btn accept_follow_btn accept_req" title="Aceptar">
 								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
 							</button>
 							<button type="button" onclick="delete_follow(this,<?php echo($udata['user_id']) ?>)" class="btn accept_follow_btn decline_req" title="Borrar">

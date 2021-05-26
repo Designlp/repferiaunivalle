@@ -44,14 +44,14 @@
 		</div>
 		<?php if ($context['user']['admin'] == 1 || $context['me']['is_pro']) { ?>
 		<div class="pp_mat_select">
-			<label class="pp_mat_label">{{LANG profile_style}}</label>
+			<label class="pp_mat_label">Estilo de perfil único</label>
 			<div>
 				<select name="profile" class="form-control" required="true">
 					<option value="1" <?php if($context['me']['profile'] == 1){ ?> selected <?php } ?>>
-						{{LANG default_profile}}
+						Perfil por defecto
 					</option>
 					<option value="2" <?php if($context['me']['profile'] == 2){ ?> selected <?php } ?>>
-						{{LANG new_profile}}
+						Nuevo perfil
 					</option>
 				</select>
 				<span class="bar"></span>
@@ -69,7 +69,7 @@
 		<div class="pp_mat_input">
 			<input type="url2" name="b_name" class="form-control" value="<?php echo($context['me']['b_name']) ?>">
 			<span class="bar"></span>
-			<label>{{LANG business_name}}</label>
+			<label>Nombre del Negocio</label>
 		</div>
 		<div class="pp_mat_input">
 			<input type="url2" name="b_email" class="form-control" value="<?php echo($context['me']['b_email']) ?>">
@@ -79,15 +79,15 @@
 		<div class="pp_mat_input">
 			<input type="url2" name="b_phone" class="form-control" value="<?php echo($context['me']['b_phone']) ?>">
 			<span class="bar"></span>
-			<label>{{LANG phone_number}}</label>
+			<label>Número de teléfono</label>
 		</div>
 		<div class="pp_mat_input">
 			<input type="url2" name="b_site" class="form-control" value="<?php echo($context['me']['b_site']) ?>">
 			<span class="bar"></span>
-			<label>{{LANG call_to_target_url}}</label>
+			<label>Llamar a la URL de destino</label>
 		</div>
 		<div class="pp_mat_select">
-			<label class="pp_mat_label">{{LANG call_to_action}}</label>
+			<label class="pp_mat_label">Llamada a la acción</label>
 			<div>
 				<select name="b_site_action" class="form-control" required="true">
 					<?php foreach ($context['call_action'] as $cid => $cname) { ?>

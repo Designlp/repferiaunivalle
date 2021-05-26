@@ -3,7 +3,7 @@
 		<img src="<?php echo(media($post_data['user_data']['avatar'])) ?>" class="img-circle" />
 		<span class="timeline-posts_ads_name">
 			<a href="<?php echo($post_data['url']) ?>" class="publisher-name" target="_blank"><?php if ($post_data['headline']) { echo $post_data['headline']; } ?></a>
-			<p><a href="{{CONFIG site_url}}/ads" data-ajax="ajax_loading.php?app=ads&apph=ads" class="sponsored">{{LANG sponsored}}</a></p>
+			<p><a href="{{CONFIG site_url}}/ads" data-ajax="ajax_loading.php?app=ads&apph=ads" class="sponsored">Patrocinado</a></p>
 		</span>
 		<?php if ($post_data['user_data']['user_id'] == $me['user_id']) { ?>
 			<div class="dropdown pull-right">

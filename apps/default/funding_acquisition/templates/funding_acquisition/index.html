@@ -33,7 +33,7 @@
 						<div id="fake_img_holder"></div>
 						<div class="upload_fk_image" onclick="document.getElementById('image').click(); return false">
 							<div class="upload_fk_image_content">
-								<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M9,16V10H5L12,3L19,10H15V16H9M5,20V18H19V20H5Z" /></svg> {{LANG upload_file}}
+								<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M9,16V10H5L12,3L19,10H15V16H9M5,20V18H19V20H5Z" /></svg> Subir archivo
 							</div>
 						</div>
 					</div>
@@ -41,7 +41,7 @@
 				<input type="file" id="image" name="image" class="hidden">
                 <input type="hidden" name="hash" value="<?php echo($context['csrf_token']) ?>">
                 <div class="clear"></div>
-                <div class="pp_load_loader"><button class="btn btn-info pp_flat_btn" type="submit"><span>{{LANG submit}}</span></button></div>
+                <div class="pp_load_loader"><button class="btn btn-info pp_flat_btn" type="submit"><span>Enviar</span></button></div>
 				</div>
 				<div class="col-md-2"></div>
             </form>

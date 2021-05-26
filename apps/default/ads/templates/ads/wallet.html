@@ -62,7 +62,7 @@
 				<div id="fake_img_holder"></div>
 				<div class="upload_fk_image" onclick="document.getElementById('upload-image').click(); return false">
 					<div class="upload_fk_image_content">
-						<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M9,16V10H5L12,3L19,10H15V16H9M5,20V18H19V20H5Z" /></svg> {{LANG upload_file}}
+						<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M9,16V10H5L12,3L19,10H15V16H9M5,20V18H19V20H5Z" /></svg> Subir archivo
 					</div>
 				</div>
 			</div>
@@ -149,7 +149,7 @@ $(document).ready(function() {
 
 	function Pxp_GetPaymentMethods(type) {
 		$('#wallet_btn').attr('disabled','true');
-		$('#wallet_btn').find('span').html("{{LANG please_wait}}");
+		$('#wallet_btn').find('span').html("Por favor espere");
 		if ($('#wallet').val() > 0) {
 			$.post(link('main/get_payment_methods'), {type: type}, function(data, textStatus, xhr) {
 				if (data.status == 200) {
@@ -168,7 +168,7 @@ $(document).ready(function() {
             });
 		}
 		$('#wallet_btn').removeAttr('disabled');
-		$('#wallet_btn').find('span').html("{{LANG submit}}");
+		$('#wallet_btn').find('span').html("Enviar");
 	}
 
 	function Pxp_GetPayPalLink(type) {
@@ -202,12 +202,12 @@ $(document).ready(function() {
 		        locale: 'english',
 		        image: '',
 		        token: function(token) {
-		          $('.confirm--modal--body').html('<i class="fa fa-spin fa-spinner"></i> {{LANG c_payment}}');
+		          $('.confirm--modal--body').html('<i class="fa fa-spin fa-spinner"></i> Confirmando su pago, por favor espere ..');
 		          $.post(link('go_pro/stripe_payment'), {stripeToken:token.id,type:type,amount:amount}, function (data) {
 		          	 if (data.status == 200) {
 		          	 	window.location.href = data.url;
 		          	 } else {
-		          	 	$('.confirm--modal--body').html('<i class="fa fa-spin fa-spinner"></i> {{LANG payment_declined}}');
+		          	 	$('.confirm--modal--body').html('<i class="fa fa-spin fa-spinner"></i> Pago rechazado, inténtalo de nuevo más tarde.');
 		          	 }
 		          });
 		        }
@@ -244,7 +244,7 @@ $(document).ready(function() {
 			var price = $('#wallet').val();
 			$('#bank_price_input').attr('value', price);
 			var click_event = "$('#upload-image').trigger('click');";
-			$(".images-renderer").html('<div class="select-images" onclick="'+click_event+'"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-image"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg><h5>{{LANG choose_an_image}}</h5></span></div>');
+			$(".images-renderer").html('<div class="select-images" onclick="'+click_event+'"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-image"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg><h5>Elige una imagen</h5></span></div>');
 			$('#configreset').click();
 			$('.bank_payment--modal').fadeIn(250);
 		}

@@ -50,7 +50,7 @@
 							<div class="is_should_hide2">
 								<p class="is_should_hide3">Advertencia: esta publicación puede contener imágenes dañinas u ofensivas o contenido para adultos (mayores de 18 años).</p>
 								<div class="is_should_hide4">
-									<a class="is_should_hide5" href="javascript:void(0);" onclick="show_m_reprted(<?php echo($context['post_data']['post_id']) ?>)">{{LANG click_to_see}}</a>
+									<a class="is_should_hide5" href="javascript:void(0);" onclick="show_m_reprted(<?php echo($context['post_data']['post_id']) ?>)">Click para ver</a>
 								</div>
 							</div>
 						</div>
@@ -134,7 +134,7 @@
 										</button>
 									<?php  } else{ ?>
 										<button class="btn-follow pull-right" onclick="follow(<?php echo($context['post_data']['user_id']) ?>,this);">
-											<span>{{LANG follow}}</span>
+											<span>Seguir</span>
 										</button>
 								<?php } } ?>
 							</div>
@@ -229,11 +229,11 @@
 									    <?php if ($context['post_data']['user_data']['is_pro']) { ?>
 								    		<?php if ($context['post_data']['boosted'] == 0) { ?>
 								    			<li onclick="pxp_boost_post(<?php echo $context['post_data']['post_id']; ?>);">
-										    		<a href="javascript:void(0);" id="boost_<?php echo $post_data['post_id']; ?>">{{LANG boost_post}}</a>
+										    		<a href="javascript:void(0);" id="boost_<?php echo $post_data['post_id']; ?>">Boost Post</a>
 										    	</li>
 								    		<?php }else{ ?>
 								    			<li onclick="pxp_boost_post(<?php echo $context['post_data']['post_id']; ?>);">
-										    		<a href="javascript:void(0);" id="boost_<?php echo $post_data['post_id']; ?>">{{LANG unboost_post}}</a>
+										    		<a href="javascript:void(0);" id="boost_<?php echo $post_data['post_id']; ?>">Publicar unBoost</a>
 										    	</li>
 								    	<?php }} ?>
 									<?php } ?>
