@@ -3,10 +3,10 @@
 	<div class="acc_stats_hdr">
 		<h3 class="pull-left">Análisis de cuentas</h3>
 		<select id="type" name="type" class="form-control pull-right">
-			<option value="today" <?php echo ($context['cat_type'] == 'today') ? 'selected': '';?>> Hoy</option>
-			<option value="this_week" <?php echo ($context['cat_type'] == 'this_week') ? 'selected': '';?>>{{LANG this_week}}</option>
-			<option value="this_month" <?php echo ($context['cat_type'] == 'this_month') ? 'selected': '';?>>{{LANG this_month}}</option>
-			<option value="this_year" <?php echo ($context['cat_type'] == 'this_year') ? 'selected': '';?>>{{LANG this_year}}</option>
+			<option value="today" <?php echo ($context['cat_type'] == 'today') ? 'selected': '';?>>Hoy</option>
+			<option value="this_week" <?php echo ($context['cat_type'] == 'this_week') ? 'selected': '';?>>Esta semana</option>
+			<option value="this_month" <?php echo ($context['cat_type'] == 'this_month') ? 'selected': '';?>>Este mes</option>
+			<option value="this_year" <?php echo ($context['cat_type'] == 'this_year') ? 'selected': '';?>>Este año</option>
         </select>
 	</div>
 	<div class="row m-0">
@@ -14,14 +14,14 @@
 		<div class="col-md-3 text-center">
 			<div class="acc_stats_stat like">
 				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" /></svg>
-				<h3>{{LANG likes}}</h3>
+				<h3>Me gusta</h3>
 				<p><?php echo $context['total_likes']; ?></p>
 			</div>
 		</div>
 		<div class="col-md-3 text-center">
 			<div class="acc_stats_stat comment">
 				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12,23A1,1 0 0,1 11,22V19H7A2,2 0 0,1 5,17V7A2,2 0 0,1 7,5H21A2,2 0 0,1 23,7V17A2,2 0 0,1 21,19H16.9L13.2,22.71C13,22.89 12.76,23 12.5,23H12M3,15H1V3A2,2 0 0,1 3,1H19V3H3V15Z" /></svg>
-				<h3>{{LANG comments}}</h3>
+				<h3>Comentarios</h3>
 				<p><?php echo $context['total_comments']; ?></p>
 			</div>
 		</div>
@@ -139,11 +139,11 @@ $(function () {
             }
         },
         series: [{
-            name: '{{LANG likes}}',
+            name: 'Likes',
             data: [<?php echo $context['likes_array'];?>]
 
         },{
-            name: '{{LANG comments}}',
+            name: 'Comentarios',
             data: [<?php echo $context['comments_array'];?>]
 
         }]

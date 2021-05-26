@@ -7,33 +7,33 @@
 					<div class="pp_mat_input">
 						<input required="true" type="text" name="company" class="form-control">
 						<span class="bar"></span>
-						<label>{{LANG company}}</label>
+						<label>Empresa</label>
 					</div>
 					<div class="pp_mat_input">
 						<input required="true" type="text" name="url" class="form-control">
 						<span class="bar"></span>
-						<label>{{LANG url}}</label>
+						<label>URL de destino</label>
 					</div>
 					<div class="pp_mat_input">
 						<input required="true" type="text" name="title" class="form-control">
 						<span class="bar"></span>
-						<label>{{LANG title}}</label>
+						<label>Título</label>
 					</div>
 					<div class="pp_mat_input" id="review-ads-location">
 						<input required="true" type="text" name="location" class="form-control" id="ads-location">
 						<span class="bar"></span>
-						<label>{{LANG location}}</label>
+						<label>Ubicación</label>
 						<div id="place"></div>
 					</div>
 					<div class="pp_mat_input">
 						<textarea class="form-control" name="description" rows="3"></textarea>
 						<span class="bar"></span>
-						<label>{{LANG description}}</label>
+						<label>Descripción</label>
 					</div>
 					<div class="pp_mat_select ads_select_country_input">
-						<label class="pp_mat_label">{{LANG country}}</label>
+						<label class="pp_mat_label">País</label>
 						<div>
-							 <select class="form-control selectpicker show-menu-arrow show-tick" multiple name="country[]" data-live-search="true" title="{{LANG country}}" data-actions-box="true">
+							 <select class="form-control selectpicker show-menu-arrow show-tick" multiple name="country[]" data-live-search="true" title="País" data-actions-box="true">
 				              	<?php foreach ($context['countries_name'] as $cid => $cname) { ?>
 									<option value="<?php echo($cid) ?>">
 										<?php echo $cname; ?>
@@ -47,7 +47,7 @@
 				</div>
 				<div class="col-md-6">
 					<div class="pp_mat_select">
-						<label class="pp_mat_label">{{LANG bidding}}</label>
+						<label class="pp_mat_label">Ofertas</label>
 						<div>
 							<select name="bidding" class="form-control">
 								<option value="clicks"><?php echo str_replace('{{PRICE}}',  $context['currency_symbol'] . $config['ad_c_price'], $context['lang']['pay_per_click']); ?></option>
@@ -58,7 +58,7 @@
 						<div class="clear"></div>
 					</div>
 					<div class="pp_mat_select">
-						<label class="pp_mat_label">{{LANG placement}}</label>
+						<label class="pp_mat_label">Colocación</label>
 						<div>
 							<select name="appears" class="form-control">
 								<option value="post"><?php echo $context['lang']['post']; ?></option>
@@ -69,12 +69,12 @@
 						<div class="clear"></div>
 					</div>
 					<div class="pp_mat_select">
-						<label class="pp_mat_label">{{LANG gender}}</label>
+						<label class="pp_mat_label">Género</label>
 						<div>
 							<select name="gender" class="form-control">
-								<option value="all">{{LANG all}}</option>
-								<option value="male">{{LANG male}}</option>
-								<option value="female">{{LANG female}}</option>
+								<option value="all">Todos</option>
+								<option value="male">Masculino</option>
+								<option value="female">Femenino</option>
 							</select>
 							<span class="bar"></span>
 						</div>
@@ -84,7 +84,7 @@
 						<div id="fake_img_holder"></div>
 						<div class="upload_fk_image" onclick="document.getElementById('image').click(); return false">
 							<div class="upload_fk_image_content">
-								<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M9,16V10H5L12,3L19,10H15V16H9M5,20V18H19V20H5Z" /></svg> {{LANG upload_file}}
+								<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M9,16V10H5L12,3L19,10H15V16H9M5,20V18H19V20H5Z" /></svg> Subir foto
 							</div>
 						</div>
 					</div>
@@ -94,7 +94,7 @@
 					<div class="clear"></div>
 				</div>
 				<div class="clear"></div>
-				<div class="pp_load_loader"><button class="btn btn-info pp_flat_btn" type="submit"><span>{{LANG submit}}</span></button></div>
+				<div class="pp_load_loader"><button class="btn btn-info pp_flat_btn" type="submit"><span>Enviar</span></button></div>
 			</form>
 		</div>
 	</div>

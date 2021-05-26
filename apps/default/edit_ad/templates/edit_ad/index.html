@@ -6,33 +6,33 @@
 					<div class="pp_mat_input">
 						<input required="true" type="text" name="company" class="form-control" value="<?php echo($context['user_ad']->name) ?>">
 						<span class="bar"></span>
-						<label>{{LANG company}}</label>
+						<label>Empresa</label>
 					</div>
 					<div class="pp_mat_input">
 						<input required="true" type="text" name="url" class="form-control" value="<?php echo($context['user_ad']->url) ?>">
 						<span class="bar"></span>
-						<label>{{LANG url}}</label>
+						<label>URL de destino</label>
 					</div>
 					<div class="pp_mat_input" id="review-ads-location">
 						<input required="true" type="text" name="title" class="form-control" value="<?php echo($context['user_ad']->headline) ?>" id="ads-location">
 						<span class="bar"></span>
-						<label>{{LANG title}}</label>
+						<label>Título</label>
 						<div id="place"></div>
 					</div>
 					<div class="pp_mat_input">
 						<input required="true" type="text" name="location" class="form-control" value="<?php echo($context['user_ad']->location) ?>">
 						<span class="bar"></span>
-						<label>{{LANG location}}</label>
+						<label>Ubicación</label>
 					</div>
 					<div class="pp_mat_input">
 						<textarea class="form-control" name="description" rows="3"><?php echo($context['user_ad']->description) ?></textarea>
 						<span class="bar"></span>
-						<label>{{LANG description}}</label>
+						<label>Descripción</label>
 					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="pp_mat_select ads_select_country_input">
-						<label class="pp_mat_label">{{LANG country}}</label>
+						<label class="pp_mat_label">País</label>
 						<div>
 							 <select class="form-control selectpicker show-menu-arrow show-tick" multiple name="country[]" data-live-search="true" title="{{LANG country}}" data-actions-box="true">
 				              	<?php foreach ($context['countries_name'] as $cid => $cname) { ?>
@@ -68,23 +68,23 @@
 						<div class="clear"></div>
 					</div>
 					<div class="pp_mat_select">
-						<label class="pp_mat_label">{{LANG gender}}</label>
+						<label class="pp_mat_label">Género</label>
 						<div>
 							<select name="gender" class="form-control">
-								<option value="all" <?php echo ($context['user_ad']->gender == 'all' ? 'selected' : ''); ?>>{{LANG all}}</option>
-								<option value="male" <?php echo ($context['user_ad']->gender == 'male' ? 'selected' : ''); ?>>{{LANG male}}</option>
-								<option value="female" <?php echo ($context['user_ad']->gender == 'female' ? 'selected' : ''); ?>>{{LANG female}}</option>
+								<option value="all" <?php echo ($context['user_ad']->gender == 'all' ? 'selected' : ''); ?>>Todos</option>
+								<option value="male" <?php echo ($context['user_ad']->gender == 'male' ? 'selected' : ''); ?>>Masculino</option>
+								<option value="female" <?php echo ($context['user_ad']->gender == 'female' ? 'selected' : ''); ?>>Femenino</option>
 							</select>
 							<span class="bar"></span>
 						</div>
 						<div class="clear"></div>
 					</div>
 					<div class="pp_mat_select">
-						<label class="pp_mat_label">{{LANG status}}</label>
+						<label class="pp_mat_label">Estado</label>
 						<div>
 							<select name="status" class="form-control">
-								<option value="1" <?php echo ($context['user_ad']->status == 1 ? 'selected' : ''); ?>>{{LANG active}}</option>
-								<option value="0" <?php echo ($context['user_ad']->status == 0 ? 'selected' : ''); ?>>{{LANG not_active}}</option>
+								<option value="1" <?php echo ($context['user_ad']->status == 1 ? 'selected' : ''); ?>>Activo</option>
+								<option value="0" <?php echo ($context['user_ad']->status == 0 ? 'selected' : ''); ?>>No Activo</option>
 							</select>
 							<span class="bar"></span>
 						</div>
@@ -107,7 +107,7 @@
 					<div class="clear"></div>
 				</div>
 				<div class="clear"></div>
-				<div class="pp_load_loader"><button class="btn btn-info pp_flat_btn" type="submit"><span>{{LANG submit}}</span></button></div>
+				<div class="pp_load_loader"><button class="btn btn-info pp_flat_btn" type="submit"><span>Enviar</span></button></div>
 			</form>
 		</div>
 	</div>
