@@ -32,12 +32,12 @@
 <script type="text/javascript">
 function Pxp_LoadMoreFund(self) {
     var last_id = $('.fund_item').last().attr('data-fund');
-    $(self).find('span').text('{{LANG please_wait}}');
+    $(self).find('span').text('Por favor espera..');
     $.post(link('profile/load_more_fund'), {id: last_id}, function(data, textStatus, xhr) {
         if (data.status == 200) {
             if (data.html != '') {
                 $('.list').append(data.html);
-                $(self).find('span').text('{{LANG load_more}}');
+                $(self).find('span').text('Carga más);
             }
             else{
                 $('.fund_btn').remove();

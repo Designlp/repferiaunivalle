@@ -44,7 +44,7 @@
 
 								<?php if (!$context['is_owner']) { ?>
 									<?php if ($context['is_reported']) { ?>
-										<li class="report-profile" onclick="report_profile('<?php echo($context['user_data']['user_id']) ?>',-1);"><a href="javascript:void(0);">{{LANG cancel_report}}</a></li>
+										<li class="report-profile" onclick="report_profile('<?php echo($context['user_data']['user_id']) ?>',-1);"><a href="javascript:void(0);">Cancelar informe</a></li>
 									<?php } else{ ?>
 										<li class="report-profile" data-modal-menu="report-profile"><a href="javascript:void(0);">{{LANG report_user}}</a></li>
 									<?php } ?>
@@ -150,23 +150,23 @@
 				<ul class="navbar-nav nav justify-content-center">
 					<li class="nav-item <?php if($context['page'] == 'posts'){ ?>active<?php } ?>">
 						<a class="nav__item"  <?php if($context['navbar'] && $context['total_posts'] > 0 ){ ?>href="<?php echo($context['user_data']['url']) ?>/posts" data-ajax="ajax_loading.php?app=profile&apph=profile&uname=<?php echo($context['user_data']['username']) ?>&page=posts"<?php } ?> >
-							<?php echo $context['total_posts']; ?><span>  {{LANG posts}}</span>
+							<?php echo $context['total_posts']; ?><span>Posts</span>
 						</a>
 					</li>
 					<li class="nav-item <?php if($context['page'] == 'followers'){ ?>active<?php } ?>">
 						<a class="nav__item"  <?php if($context['navbar'] && $context['user_followers']){ ?>href="<?php echo($context['user_data']['url']) ?>/followers" data-ajax="ajax_loading.php?app=profile&apph=profile&uname=<?php echo($context['user_data']['username']) ?>&page=followers"<?php } ?>>
-							<?php echo $context['user_followers']; ?> <span>{{LANG followers}}</span>
+							<?php echo $context['user_followers']; ?> <span>Seguidores</span>
 						</a>
 					</li>
 					<li class="nav-item <?php if($context['page'] == 'following'){ ?>active<?php } ?>">
 						<a class="nav__item"  <?php if($context['navbar'] && $context['user_following']){ ?>href="<?php echo($context['user_data']['url']) ?>/following" data-ajax="ajax_loading.php?app=profile&apph=profile&uname=<?php echo($context['user_data']['username']) ?>&page=following"<?php } ?>>
-							<?php echo $context['user_following']; ?><span>{{LANG following}}</span>
+							<?php echo $context['user_following']; ?><span>Siguiendo</span>
 						</a>
 					</li>
 					<?php if($context['is_owner']){ ?>
 						<li class="nav-item <?php if($context['page'] == 'favourites'){ ?>active<?php } ?>">
 							<a class="nav__item"  <?php if($context['favourites']){ ?>href="<?php echo($context['user_data']['url']) ?>/favourites" data-ajax="ajax_loading.php?app=profile&apph=profile&uname=<?php echo($context['user_data']['username']) ?>&page=favourites"<?php } ?>>
-								<?php echo $context['favourites']; ?><span>{{LANG favourites}}</span>
+								<?php echo $context['favourites']; ?><span>Favoritos</span>
 							</a>
 						</li>
 						<?php if($context['user_data']['is_pro']){ ?>

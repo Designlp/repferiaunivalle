@@ -23,15 +23,15 @@
 				<div class="pp_mat_input">
 					<input required="true" type="email" name="paypal_email" class="form-control" value="<?php echo($context['me']['paypal_email']) ?>">
 					<span class="bar"></span>
-					<label>{{LANG paypal_email}}*</label>
+					<label>Correo de Paypal *</label>
 				</div>
 				<div class="pp_mat_input">
 					<input required="true" type="number" name="amount" class="form-control" min="50">
 					<span class="bar"></span>
-					<span>{{LANG min}}: <?php echo $context['currency_symbol']; ?>50</span>
+					<span>Min: <?php echo $context['currency_symbol']; ?>50</span>
 					<label>Cantidad *</label>
 				</div>
-				<div class="pp_load_loader"><button class="btn btn-info pp_flat_btn" type="submit"><span>{{LANG send}}</span></button></div>
+				<div class="pp_load_loader"><button class="btn btn-info pp_flat_btn" type="submit"><span>Enviar</span></button></div>
 				<div class="clear"></div>
 				<input type="hidden" name="user_id" value="<?php echo($context['me']['user_id']) ?>">
 				<input type="hidden" name="hash" value="<?php echo($context['csrf_token']) ?>">
@@ -46,10 +46,10 @@
 			<table class="table table-striped">
 				<thead>
 				  <tr>
-				    <th>{{LANG id}}</th>
-				    <th>{{LANG requested_at}}</th>
-				    <th>{{LANG amount}}</th>
-				    <th>{{LANG status}}</th>
+				    <th>Id</th>
+				    <th>Solicitado en}</th>
+				    <th>Cantidad</th>
+				    <th>Estado</th>
 				  </tr>
 				</thead>
 				<tbody id="user-ads">

@@ -85,10 +85,10 @@
 		})
 		.done(function(data) {
 			if (data.status == 200 && data.code == 1) {
-				$(zis).find('a').text('{{LANG cancel_report}}');
+				$(zis).find('a').text('Cancelar informe');
 			}
 			else if(data.status == 200 && data.code == 0){
-				$(zis).find('a').text('{{LANG report_post}}');
+				$(zis).find('a').text('Reportar esta publicación');
 			}
 
 			$.toast(data.message,{

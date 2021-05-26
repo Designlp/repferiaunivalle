@@ -50,7 +50,7 @@
 
 											<?php if (!$context['is_owner']) { ?>
 												<?php if ($context['is_reported']) { ?>
-													<li class="report-profile" onclick="report_profile('<?php echo($context['user_data']['user_id']) ?>',-1);"><a href="javascript:void(0);">{{LANG cancel_report}}</a></li>
+													<li class="report-profile" onclick="report_profile('<?php echo($context['user_data']['user_id']) ?>',-1);"><a href="javascript:void(0);">Cancelar informe</a></li>
 												<?php } else{ ?>
 													<li class="report-profile" data-modal-menu="report-profile"><a href="javascript:void(0);">{{LANG report_user}}</a></li>
 												<?php } ?>
