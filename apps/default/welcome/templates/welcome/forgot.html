@@ -9,12 +9,12 @@
 					</div>
 				</div>
 				<hr>
-			<h3>{{LANG reset_password}}</h3>
+			<h3>Resetear contraseña</h3>
 				<div class="signin-alert"></div>
 				<form action="" class="form" id="reset-password">
 					<div class="pp_mat_input">
-						<input class="form-control" type="email" name="email" id="email" placeholder="{{LANG email}}" required autofocus />
-						<label for="email">{{LANG email}}</label>
+						<input class="form-control" type="email" name="email" id="email" placeholder="Email" required autofocus />
+						<label for="email">Correo electrónico</label>
 						<span class="bar"></span>
 					</div>
 					<?php if ($config['recaptcha'] == 'on') { ?>
@@ -23,7 +23,7 @@
 						</div>
 					<?php } ?>
 					
-					<div class="pp_load_loader"><button class="btn btn-info pp_flat_btn" type="submit"><span>{{LANG reset}} <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></button></div>
+					<div class="pp_load_loader"><button class="btn btn-info pp_flat_btn" type="submit"><span>Resetear<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></button></div>
 
 					<input type="hidden" name="hash" value="<?php echo($context['csrf_token']) ?>">
 				</form>

@@ -48,9 +48,9 @@
 						</div>
 						<div class="is_should_hide1 text_m_reprted-<?php echo($context['post_data']['post_id']) ?>">
 							<div class="is_should_hide2">
-								<p class="is_should_hide3">{{LANG post_m_report}}</p>
+								<p class="is_should_hide3">Advertencia: esta publicación puede contener imáge...</p>
 								<div class="is_should_hide4">
-									<a class="is_should_hide5" href="javascript:void(0);" onclick="show_m_reprted(<?php echo($context['post_data']['post_id']) ?>)">{{LANG click_to_see}}</a>
+									<a class="is_should_hide5" href="javascript:void(0);" onclick="show_m_reprted(<?php echo($context['post_data']['post_id']) ?>)">Click para ver</a>
 								</div>
 							</div>
 						</div>
@@ -224,7 +224,7 @@
 									</li>
 									<li onclick="embed_post('<?php echo($context['post_data']['post_id']) ?>',this);">
 								  		<a href="javascript:void(0);">
-								  			{{LANG embed}}
+								  			Insertar
 								  		</a>
 								  	</li>
 								</ul>
@@ -246,7 +246,7 @@
 									</div>
 								<?php } else{ ?>
 									<div class="login2comment">
-										<a href="<?php echo(pxp_link('welcome')) ?>">Iniciar sesión</a> {{LANG login_to_lc_post}}
+										<a href="<?php echo(pxp_link('welcome')) ?>">Iniciar sesión</a> Dale me gusta o comenta
 									</div>
 								<?php } ?>
 							</div>

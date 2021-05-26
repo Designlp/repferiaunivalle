@@ -34,7 +34,7 @@
 					<div class="pp_mat_select ads_select_country_input">
 						<label class="pp_mat_label">País</label>
 						<div>
-							 <select class="form-control selectpicker show-menu-arrow show-tick" multiple name="country[]" data-live-search="true" title="{{LANG country}}" data-actions-box="true">
+							 <select class="form-control selectpicker show-menu-arrow show-tick" multiple name="country[]" data-live-search="true" title="País" data-actions-box="true">
 				              	<?php foreach ($context['countries_name'] as $cid => $cname) { ?>
 									<option value="<?php echo($cid) ?>" <?php echo (!empty($context['user_ad']->audience) && in_array('{'.$cid.'}', explode(',', $context['user_ad']->audience)) ? 'selected' : ''); ?>>
 										<?php echo $cname; ?>

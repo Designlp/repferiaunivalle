@@ -78,7 +78,7 @@
 				<div class="is_should_hide2">
 					<p class="is_should_hide3">Advertencia: esta publicación puede contener imáge...</p>
 					<div class="is_should_hide4">
-						<a class="is_should_hide5" href="javascript:void(0);" onclick="show_m_reprted(<?php echo $post_data['post_id']; ?>)">{{LANG click_to_see}}</a>
+						<a class="is_should_hide5" href="javascript:void(0);" onclick="show_m_reprted(<?php echo $post_data['post_id']; ?>)">Click para ver</a>
 					</div>
 				</div>
 			</div>
@@ -124,7 +124,7 @@
 
 			<?php if ($post_data['votes'] > 4) { ?>
 				<li class="load-comments">
-					<button onclick="load_tlp_comments(<?php echo $post_data['post_id']; ?>,this);">{{LANG show_more}} Comentarios</button>
+					<button onclick="load_tlp_comments(<?php echo $post_data['post_id']; ?>,this);">Mostrar mas comentarios</button>
 				</li>
 			<?php } ?>
 		</ul>

@@ -1,6 +1,6 @@
 <div class="priv-active">
 	<div class="header">
-		<h4>{{LANG acc_privacy_settings}}</h4>
+		<h4>Configuración de privacidad de la cuenta</h4>
 		<div class="clear"></div>
 	</div>
 	<hr>
@@ -8,23 +8,23 @@
 		<div class="col-md-2"></div>
 		<div class="col-md-8">
 		<div class="pp_mat_select">
-			<label class="pp_mat_label">{{LANG p_privacy}}?</label>
+			<label class="pp_mat_label">Quién puede ver tu perfil?</label>
 			<div>
 				<select name="p_privacy" class="form-control">
-					<option value="2" <?php if($context['me']['p_privacy'] == 2){ ?> selected <?php } ?>>{{LANG everyone}}</option>
+					<option value="2" <?php if($context['me']['p_privacy'] == 2){ ?> selected <?php } ?>>Todo el mundo</option>
 					<option value="1" <?php if($context['me']['p_privacy'] == 1){ ?> selected <?php } ?>>Seguidores</option>
-					<option value="0" <?php if($context['me']['p_privacy'] == 0){ ?> selected <?php } ?>>{{LANG nobody}}</option>
+					<option value="0" <?php if($context['me']['p_privacy'] == 0){ ?> selected <?php } ?>>Nadie</option>
 				</select>
 				<span class="bar"></span>
 			</div>
 			<div class="clear"></div>
 		</div>
 		<div class="pp_mat_select">
-			<label class="pp_mat_label">{{LANG c_privacy}}?</label>
+			<label class="pp_mat_label">Quién puede enviarte un mensaje directo?</label>
 			<div>
 				<select name="c_privacy" class="form-control">
-					<option value="1" <?php if($context['me']['c_privacy'] == 1){ ?> selected <?php } ?>>{{LANG everyone}}</option>
-					<option value="2" <?php if($context['me']['c_privacy'] == 2){ ?> selected <?php } ?>>{{LANG people_i_follow}}</option>
+					<option value="1" <?php if($context['me']['c_privacy'] == 1){ ?> selected <?php } ?>>Todo el mundo</option>
+					<option value="2" <?php if($context['me']['c_privacy'] == 2){ ?> selected <?php } ?>>Gente que sigo</option>
 				</select>
 				<span class="bar"></span>
 			</div>
@@ -38,7 +38,7 @@
 			</div>
 			<div class="clear"></div>
 		</div>
-		<div class="pp_load_loader"><button class="btn btn-info pp_flat_btn" type="submit"><span>{{LANG save_changes}}</span></button></div>
+		<div class="pp_load_loader"><button class="btn btn-info pp_flat_btn" type="submit"><span>Guardar cambios</span></button></div>
 		<input type="hidden" name="user_id" value="<?php echo($context['me']['user_id']) ?>">
 		<input type="hidden" name="hash" value="<?php echo($context['csrf_token']) ?>">
 		</div>

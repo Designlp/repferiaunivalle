@@ -37,5 +37,5 @@
 			</span>
 		<?php } ?>
 	</h4>
-	<button class="btn btn-danger" onclick="delete_u_session(<?php echo $sdata['id']; ?>,<?php if($_SESSION['user_id'] == $sdata['session_id']){ ?>true<?php }else{ ?>false<?php } ?>)">{{LANG delete}}</button>
+	<button class="btn btn-danger" onclick="delete_u_session(<?php echo $sdata['id']; ?>,<?php if($_SESSION['user_id'] == $sdata['session_id']){ ?>true<?php }else{ ?>false<?php } ?>)">Borrar</button>
 </div>

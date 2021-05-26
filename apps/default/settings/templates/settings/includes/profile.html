@@ -20,27 +20,27 @@
 		<div class="pp_mat_input">
 			<input type="url2" name="website" class="form-control" value="<?php echo(urldecode($context['me']['website'])) ?>">
 			<span class="bar"></span>
-			<label>{{LANG website}}</label>
+			<label>Sitio web</label>
 		</div>
 		<div class="pp_mat_input">
 			<input type="url2" name="facebook" class="form-control" value="<?php echo($context['me']['facebook']) ?>">
 			<span class="bar"></span>
-			<label>{{LANG ur_facebook}}</label>
+			<label>Tu URL de perfil de Facebook</label>
 		</div>
 		<div class="pp_mat_input">
 			<input type="url2" name="google" class="form-control" value="<?php echo($context['me']['google']) ?>">
 			<span class="bar"></span>
-			<label>{{LANG ur_google}}</label>
+			<label>Tu URL de perfil de Google-plus</label>
 		</div>
 		<div class="pp_mat_input">
 			<input type="url2" name="twitter" class="form-control" value="<?php echo($context['me']['twitter']) ?>">
 			<span class="bar"></span>
-			<label>{{LANG ur_twitter}}</label>
+			<label>Tu URL de perfil de Twitter</label>
 		</div>
 		<div class="pp_mat_input">
 			<textarea class="form-control" name="about" rows="3"><?php if($context['me']['about']){ echo br2nl($context['me']['about']) ; } ?></textarea>
 			<span class="bar"></span>
-			<label>{{LANG about_u}}</label>
+			<label>Acerca de ti</label>
 		</div>
 		<?php if ($context['user']['admin'] == 1 || $context['me']['is_pro']) { ?>
 		<div class="pp_mat_select">
@@ -74,7 +74,7 @@
 		<div class="pp_mat_input">
 			<input type="url2" name="b_email" class="form-control" value="<?php echo($context['me']['b_email']) ?>">
 			<span class="bar"></span>
-			<label>{{LANG email}}</label>
+			<label>Email</label>
 		</div>
 		<div class="pp_mat_input">
 			<input type="url2" name="b_phone" class="form-control" value="<?php echo($context['me']['b_phone']) ?>">
@@ -101,7 +101,7 @@
 			<div class="clear"></div>
 		</div>
 		<?php } ?>
-		<div class="pp_load_loader"><button class="btn btn-info pp_flat_btn" type="submit"><span>{{LANG save_changes}}</span></button></div>
+		<div class="pp_load_loader"><button class="btn btn-info pp_flat_btn" type="submit"><span>Guardar cambios</span></button></div>
 		<input type="hidden" name="user_id" value="<?php echo($context['me']['user_id']) ?>">
 		<input type="hidden" name="hash" value="<?php echo($context['csrf_token']) ?>">
 		</div>
