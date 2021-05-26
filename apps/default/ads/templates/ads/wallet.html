@@ -20,10 +20,10 @@
 			<div class="pp_mat_input">
 			<input required="true" type="number" name="wallet" class="form-control" placeholder="0.00" id="wallet">
 			<span class="bar"></span>
-			<!-- <label>{{LANG add_money}}</label> -->
+			
 		</div>
 		<input type="hidden" name="hash" value="<?php echo($context['csrf_token']) ?>">
-		<div class="pp_load_loader"><button class="btn btn-info pp_flat_btn" type="button" onclick="Pxp_GetPaymentMethods('wallet')" id="wallet_btn"><span>{{LANG add}}</span></button></div>
+		<div class="pp_load_loader"><button class="btn btn-info pp_flat_btn" type="button" onclick="Pxp_GetPaymentMethods('wallet')" id="wallet_btn"><span>Añadir</span></button></div>
 			</div>
 			<div class="col-md-4"></div>
 		</div>
@@ -69,7 +69,7 @@
 		</div>
 		<div class="confirm--modal--footer">
 			<button class="btn btn-default" data-confirm--modal-dismiss>Cancelar</button>
-			<button class="btn btn-danger btn-red send_bank">{{LANG send}}</button>
+			<button class="btn btn-danger btn-red send_bank">Enviar</button>
 			<form class="bank_transfer_form">
 	      		<input class="hidden" id="upload-image" type="file" name="image" multiple accept="image/*">
 	      		<input class="hidden" type="text" name="type" value="wallet">

@@ -14,10 +14,10 @@
 						</span>
 						<ul class="dropdown-menu">
 							<li onclick="delete_fund(<?php echo $user->id; ?>);">
-						  		<a href="javascript:void(0);">{{LANG delete_funding}}</a>
+						  		<a href="javascript:void(0);">Borrar financiación</a>
 						  	</li>
 						  	<li>
-						  		<a href="{{CONFIG site_url}}/edit_funding/<?php echo(!empty($user->hashed_id) ? $user->hashed_id : $user->id) ?>">{{LANG edit_funding}}</a>
+						  		<a href="{{CONFIG site_url}}/edit_funding/<?php echo(!empty($user->hashed_id) ? $user->hashed_id : $user->id) ?>">Editar financiación</a>
 						  	</li>
 						</ul>
 					</div>

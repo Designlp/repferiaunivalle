@@ -140,7 +140,7 @@
 							</div>
 						</div>
 						<?php if ($context['post_data']['type'] == 'fetched' && $context['post_data']['link']) { ?>
-							<a href="<?php echo($context['post_data']['link']) ?>" target="_blank" class="ml_1_" >{{LANG click_to_visit}}</a>
+							<a href="<?php echo($context['post_data']['link']) ?>" target="_blank" class="ml_1_" >Haga clic para visitar</a>
 							<br>
 						<?php } ?>
 						<?php if ($context['post_data']['description']) { ?>
@@ -202,7 +202,7 @@
 								</span>
 								<span class="pointer" onclick="view_post_likes('<?php echo($context['post_data']['post_id']) ?>');" ><b data-likes="" data-post-likes="<?php echo($context['post_data']['post_id']) ?>"><?php echo $context['post_data']['likes']; ?></b> Me gusta</span>
 								<?php if ($context['post_data']['type'] == 'video') { ?>
-									<span class="video_views_ ml_"><span><?php echo $context['post_data']['views']; ?> </span> {{LANG views}}</span>
+									<span class="video_views_ ml_"><span><?php echo $context['post_data']['views']; ?> </span> Views</span>
 								<?php } ?>
 								<div class="dropup" id="lb-embed-post">
 									<span class="dropdown-toggle" data-toggle="dropdown">

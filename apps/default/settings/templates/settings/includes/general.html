@@ -55,7 +55,7 @@
 				<label>{{LANG wallet}}</label>
 			</div>
 			<div class="form-group">
-				<label class="col-xs-9 col-sm-9 col-md-9">{{LANG activate_user}}</label>
+				<label class="col-xs-9 col-sm-9 col-md-9">Activar usuario</label>
 				<div class="col-xs-3 col-sm-3 col-md-3">
 					<input type="checkbox" <?php if($context['me']['active'] == 1){ ?> checked <?php } ?> class="tgl tgl-ios" id="active" name="active">
 					<label class="tgl-btn" for="active"></label>
@@ -63,7 +63,7 @@
 				<div class="clear"></div>
 			</div>
 			<div class="form-group">
-				<label class="col-xs-9 col-sm-9 col-md-9">{{LANG verify_user}}</label>
+				<label class="col-xs-9 col-sm-9 col-md-9">Verificar usuario</label>
 				<div class="col-xs-3 col-sm-3 col-md-3">
 					<input type="checkbox" <?php if($context['me']['verified'] == 1){ ?> checked <?php } ?> class="tgl tgl-ios" id="verified" name="verified">
 					<label class="tgl-btn" for="verified"></label>
@@ -80,7 +80,7 @@
 			</div>
 			<?php if ($config['business_account'] == 'on') { ?>
 			<div class="form-group">
-				<label class="col-xs-9 col-sm-9 col-md-9">{{LANG business_account}}</label>
+				<label class="col-xs-9 col-sm-9 col-md-9">Cuenta de negocios</label>
 				<div class="col-xs-3 col-sm-3 col-md-3">
 					<input type="checkbox" <?php if($context['me']['business_account'] == 1){ ?> checked <?php } ?> class="tgl tgl-ios" id="business_account" name="business_account">
 					<label class="tgl-btn" for="business_account"></label>

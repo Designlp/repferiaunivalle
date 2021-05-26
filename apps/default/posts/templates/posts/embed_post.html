@@ -142,7 +142,7 @@
 					
 					<div class="pp_pst_caption">
 						<?php if ($context['post_data']['type'] == 'fetched' && $context['post_data']['link']) { ?>
-						<a href="<?php echo($context['post_data']['link']) ?>" target="_blank" >{{LANG click_to_visit}}</a>
+						<a href="<?php echo($context['post_data']['link']) ?>" target="_blank" >Haga clic para visitar</a>
 						<br>
 						<?php } ?>
 						<p data-caption>
@@ -187,7 +187,7 @@
 							<?php } ?>
 							<span <?php if($context['post_data']['likes']){ ?>  class="pointer" onclick="view_post_likes('<?php echo($context['post_data']['post_id']) ?>');"<?php } ?>><span  data-post-likes="<?php echo($context['post_data']['post_id']) ?>"><?php echo $context['post_data']['likes']; ?></span> Me gusta</span>
 							<?php if ($context['post_data']['type'] == 'video') { ?>
-								<span class="video_views_ ml_"><span><?php echo $context['post_data']['views']; ?></span> {{LANG views}}</span>
+								<span class="video_views_ ml_"><span><?php echo $context['post_data']['views']; ?></span> Views</span>
 							<?php } ?>
 							<div class="dropup">
 								<span class="dropdown-toggle" data-toggle="dropdown">
