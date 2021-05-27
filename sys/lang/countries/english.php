@@ -1,7 +1,7 @@
 <?php 
 
 $countries_name   = array(
-    '0' => 'Select Country',
+    '0' => 'Seleccionar Pais',
     '1' => 'United States',
     '2' => 'Canada',
     '3' => 'Afghanistan',

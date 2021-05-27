@@ -223,13 +223,13 @@ if (empty($page_content)) {
                         </a>
                         <ul class="ml-menu">
                             <li class="<?php echo $admin->activeMenu('general-settings'); ?>">
-                                <a href="<?php echo pxp_acp_link('general-settings'); ?>" class=" waves-effect waves-block">Ajustes generales</a>
+                                <a href="<?php echo pxp_acp_link('general-settings'); ?>" class=" waves-effect waves-block">Ajustes Generales</a>
                             </li>
                             <li class="<?php echo $admin->activeMenu('site-settings'); ?>">
-                                <a href="<?php echo pxp_acp_link('site-settings'); ?>" class=" waves-effect waves-block">Site Settings</a>
+                                <a href="<?php echo pxp_acp_link('site-settings'); ?>" class=" waves-effect waves-block">Configuración de la Pagina</a>
                             </li>
                             <li class="<?php echo $admin->activeMenu('email-settings'); ?>">
-                                <a href="<?php echo pxp_acp_link('email-settings'); ?>" class=" waves-effect waves-block">E-mail Settings</a>
+                                <a href="<?php echo pxp_acp_link('email-settings'); ?>" class=" waves-effect waves-block">Ajustes del Email</a>
                             </li>
                             <li class="<?php echo $admin->activeMenu('social-login'); ?>">
                                 <a href="<?php echo pxp_acp_link('social-login'); ?>" class=" waves-effect waves-block">Social Login Settings</a>
