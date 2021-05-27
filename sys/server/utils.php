@@ -232,7 +232,7 @@ function time2str($ptime) {
         $d = $etime / $secs;
         if ($d >= 1) {
             $r = round($d);
-            return $r . ' ' . lang($str)) .($r > 1 ? lang('time_ago') :' ' . lang($a_plural[$str]);
+            return  ' ' . ($r > 1 ? lang('time_ago') : lang($str)) .' '. $r.' ' . lang($a_plural[$str]);
         }
     }
 }
