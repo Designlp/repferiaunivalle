@@ -223,7 +223,7 @@ if (empty($page_content)) {
                         </a>
                         <ul class="ml-menu">
                             <li class="<?php echo $admin->activeMenu('general-settings'); ?>">
-                                <a href="<?php echo pxp_acp_link('general-settings'); ?>" class=" waves-effect waves-block">General Settings</a>
+                                <a href="<?php echo pxp_acp_link('general-settings'); ?>" class=" waves-effect waves-block">Ajustes generales</a>
                             </li>
                             <li class="<?php echo $admin->activeMenu('site-settings'); ?>">
                                 <a href="<?php echo pxp_acp_link('site-settings'); ?>" class=" waves-effect waves-block">Site Settings</a>
