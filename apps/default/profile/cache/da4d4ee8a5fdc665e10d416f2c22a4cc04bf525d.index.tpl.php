@@ -504,7 +504,7 @@ function content_5ab10ea3d31795_48832681 (Smarty_Internal_Template $_smarty_tpl)
 				About
 			</a>
 		</li>
-		<li class="dropup">
+		<!-- <li class="dropup">
 			<span class="dropdown-toggle" data-toggle="dropdown">
 			    <a>Language</a> <i class="zmdi zmdi-translate"></i>
 			</span>
@@ -556,7 +556,7 @@ function content_5ab10ea3d31795_48832681 (Smarty_Internal_Template $_smarty_tpl)
 				  	</li>
 				
 			</ul>
-		</li>
+		</li> -->
 		<li>
 			<span class="fluid copyright">Copyright &copy; 2018 PixelPhoto</span>
 		</li>
